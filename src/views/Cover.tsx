@@ -16,7 +16,7 @@ export default function Cover() {
 					fontSize='2rem'
 					gutterBottom
 				>
-					Hi! I'm Jesus Ordosgoitty
+					Hi! I&apos;m Jesus Ordosgoitty
 				</Typography>
 				<Typography
 					variant='h1'
