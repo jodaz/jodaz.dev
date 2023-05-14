@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import { Avatar } from '@/components/Avatar';
+import SocialIcons from '@/components/SocialIcons';
 
 const Cover = () => (
 	<Box sx={{
@@ -14,7 +15,8 @@ const Cover = () => (
 	}}>
 		<Stack
 			spacing={2}
-			m={1}
+			mb={2}
+			p={2}
 		>
 			<Typography
 				variant='h6'
@@ -30,8 +32,11 @@ const Cover = () => (
 				Hi!, I&apos;m a <strong>Frontend Developer</strong> with 5+ years of experience as a <strong>Web Developer </strong>
 			 	working with ReactJS, NodeJS, and Laravel. Experienced in agile teams, debugging, and optimizing web applications. 
 			</Typography>
+			<SocialIcons />
 		</Stack>
-		<Avatar />
+		<Box p={2}>
+			<Avatar />
+		</Box>
 	</Box>
 )
 

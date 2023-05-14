@@ -148,7 +148,6 @@ const theme = createTheme({
             styleOverrides: {
                 tooltip:({ theme }) => ({
                     backgroundColor: '#fff',
-                    // color: theme.palette.text.tertiary,
                     boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.15)',
                     borderRadius: '5px',
                     fontSize: '12px',
@@ -156,6 +155,15 @@ const theme = createTheme({
                     padding: '12px',
                     lineHeight: '16px',
                     maxWidth: '160px'
+                })
+            }
+        },
+        MuiLink: {
+            styleOverrides: {
+                root:({ theme }) => ({
+                    '&:hover': {
+						color: `${alpha(theme.palette.primary.main, 0.8)}`
+					}
                 })
             }
         }
