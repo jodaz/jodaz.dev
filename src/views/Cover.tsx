@@ -1,31 +1,33 @@
+import * as React from 'react'
 import { Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
+import { Avatar } from '@/components/Avatar';
 
-export default function Cover() {
-	return (
-		<Box sx={{
-			width: '100%',
-			height: '100%',
-			display: 'flex',
-			justifyContent: 'center',
-			alignItems: 'center'
-		}}>
-			<Stack spacing={2}>
-				<Typography
-					variant='h1'
-					fontSize='2rem'
-					gutterBottom
-				>
-					Hi! I&apos;m Jesus Ordosgoitty
-				</Typography>
-				<Typography
-					variant='h1'
-					fontSize='2rem'
-					gutterBottom
-				>
-					Software Developer
-				</Typography>
-			</Stack>
-		</Box>
-	)
-}
+const Cover = () => (
+	<Box sx={{
+		width: '100%',
+		height: '100%',
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center'
+	}}>
+		<Stack spacing={2}>
+			<Typography
+				variant='subtitle1'
+				fontWeight={700}
+				gutterBottom
+			>
+				Jesus Ordosgoitty
+			</Typography>
+			<Typography
+				variant='subtitle1'
+				gutterBottom
+			>
+				Software Developer
+			</Typography>
+			<Avatar />
+		</Stack>
+	</Box>
+)
+
+export default Cover
