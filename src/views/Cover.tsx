@@ -9,11 +9,15 @@ const Cover = () => (
 		height: '100%',
 		display: 'flex',
 		justifyContent: 'center',
-		alignItems: 'center'
+		alignItems: 'center',
+		flexDirection: { xs: 'column', sm: 'column', lg: 'row' }
 	}}>
-		<Stack spacing={2}>
+		<Stack
+			spacing={2}
+			m={1}
+		>
 			<Typography
-				variant='subtitle1'
+				variant='h6'
 				fontWeight={700}
 				gutterBottom
 			>
@@ -23,10 +27,11 @@ const Cover = () => (
 				variant='subtitle1'
 				gutterBottom
 			>
-				Software Developer
+				Hi!, I&apos;m a <strong>Frontend Developer</strong> with 5+ years of experience as a <strong>Web Developer </strong>
+			 	working with ReactJS, NodeJS, and Laravel. Experienced in agile teams, debugging, and optimizing web applications. 
 			</Typography>
-			<Avatar />
 		</Stack>
+		<Avatar />
 	</Box>
 )
 

@@ -7,7 +7,12 @@ import {
 export const Avatar = () => {
 
 	return (
-		<Box>
+		<Box sx={{
+			width: 'fit-content',
+			height: 'fit-content',
+			boxSizing: 'content-box',
+			borderRadius: '25px'
+		}}>
 			<Image
 				src="/images/avatar.jpeg"
 				alt="avatar"
