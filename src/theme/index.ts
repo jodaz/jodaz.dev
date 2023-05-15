@@ -1,47 +1,7 @@
 import { createTheme, alpha } from '@mui/material/styles';
 import { PaletteMode } from '@mui/material';
 
-const darkPalette = {
-    primary: {
-        main: '#161B24',
-        contrastText: '#fff'
-    },
-    secondary: {
-        main: '#fff',
-        contrastText: '#161B24'
-    },
-    text: {
-        primary: '#161B24',
-        secondary: '#757E8A'
-    },
-    divider: '#ccc',
-    background: {
-        light: '#DAE0E6',
-        default: '#EDF0F'
-    }
-}
-
-const lightPalette = {
-    primary: {
-        main: '#161B24',
-        contrastText: '#fff'
-    },
-    secondary: {
-        main: '#fff',
-        contrastText: '#161B24'
-    },
-    text: {
-        primary: '#161B24',
-        secondary: '#757E8A'
-    },
-    divider: '#ccc',
-    background: {
-        light: '#DAE0E6',
-        default: '#EDF0F'
-    }
-}
-
-const theme = createTheme({
+const theme = (mode: PaletteMode) => createTheme({
     typography: {
         fontFamily: 'Roboto, sans-serif',
 		h6: {
@@ -51,7 +11,23 @@ const theme = createTheme({
 			fontSize: '1.1rem'
 		}
     },
-    palette: darkPalette,
+    palette: {
+		mode: mode,
+		primary: {
+			main: '#161B24'
+		},
+		secondary: {
+			main: '#fff'
+		},
+		text: {
+			primary: (mode === 'dark') ? '#fff' : '#161B24',
+			secondary: '#757E8A'
+		},
+		divider: '#ccc',
+		background: {
+			default: (mode === 'dark') ? '#161B24' : '#EDF0F'
+		}
+	},
     components: {
         MuiButton: {
             styleOverrides: {
@@ -113,8 +89,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     borderRadius: '12px',
-                    fontWeight: 500,
-                    // color: '#F24747'
+                    fontWeight: 500
                 }
             }
         },
@@ -152,7 +127,7 @@ const theme = createTheme({
         },
         MuiTooltip: {
             styleOverrides: {
-                tooltip:({ theme }) => ({
+                tooltip: () => ({
                     backgroundColor: '#fff',
                     boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.15)',
                     borderRadius: '5px',
@@ -168,7 +143,9 @@ const theme = createTheme({
             styleOverrides: {
                 root:({ theme }) => ({
                     '&:hover': {
-						color: `${alpha(theme.palette.primary.main, 0.8)}`
+						color: (mode === 'dark') 
+							? `${alpha(theme.palette.secondary.main, 0.8)}`
+							: `${alpha(theme.palette.primary.main, 0.8)}`
 					}
                 })
             }

@@ -7,11 +7,13 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 			display: 'flex',
 			width: '100%',
 			height: '100%',
-			justifyContent: 'center'
+			justifyContent: 'center',
+			backgroundColor: theme => theme.palette.background.default
 		}}>
 			<Box sx={{
 				width: { sm: '100%', lg: '40%' },
-				padding: 2
+				padding: 2,
+				color: 'text.primary'
 			}}>
 				{children}
 			</Box>

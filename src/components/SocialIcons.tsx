@@ -21,7 +21,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ href, CustomIcon, size = 'md' }
 	const dim = size == 'md' ? '2rem' : '1rem';
 
 	return (
-		<Link href={href} target='_blank'>
+		<Link href={href} target='_blank' color='text.primary'>
 			<CustomIcon size={dim} />
 		</Link>
 	)
