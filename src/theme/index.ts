@@ -1,6 +1,7 @@
 import { createTheme, alpha } from '@mui/material/styles';
+import { PaletteMode } from '@mui/material';
 
-const palette = {
+const darkPalette = {
     primary: {
         main: '#161B24',
         contrastText: '#fff'
@@ -9,16 +10,24 @@ const palette = {
         main: '#fff',
         contrastText: '#161B24'
     },
-    error: {
-        main: '#C24141',
-        contrastText: '#161B24'
+    text: {
+        primary: '#161B24',
+        secondary: '#757E8A'
     },
-    warning: {
-        main: '#E7C95E',
-        contrastText: '#161B24'
+    divider: '#ccc',
+    background: {
+        light: '#DAE0E6',
+        default: '#EDF0F'
+    }
+}
+
+const lightPalette = {
+    primary: {
+        main: '#161B24',
+        contrastText: '#fff'
     },
-    success: {
-        main: '#66996E',
+    secondary: {
+        main: '#fff',
         contrastText: '#161B24'
     },
     text: {
@@ -42,7 +51,7 @@ const theme = createTheme({
 			fontSize: '1.1rem'
 		}
     },
-    palette: palette,
+    palette: darkPalette,
     components: {
         MuiButton: {
             styleOverrides: {
@@ -78,10 +87,7 @@ const theme = createTheme({
                     '&.Mui-focused': {
                         boxShadow: `${alpha(theme.palette.primary.main, 0.25)} 0 0 0 0.2rem`,
                         borderColor: theme.palette.primary.main,
-                    },
-                    '&.Mui-error': {
-                        border: `2px solid ${theme.palette.error.main}`
-                    },
+                    }
                 })
             }
         },

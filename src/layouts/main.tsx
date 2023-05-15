@@ -1,8 +1,5 @@
 import { Box } from "@mui/material"
-
-interface LayoutProps {
-	children: React.ReactNode
-}
+import { LayoutProps } from "@/types"
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
