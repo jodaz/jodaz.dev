@@ -1,13 +1,21 @@
 import * as React from 'react';
-import { ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { ToggleButton, ToggleButtonGroup, alpha } from '@mui/material';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import styled from '@emotion/styled';
 
-const Button = styled(ToggleButton)({
+const Button = styled(ToggleButton)(({ theme }) => ({
     border: 'none',
     fontWeight: 900,
-})
+    borderRadius: '8px !important',
+    transition: '0.3s',
+    '&[aria-pressed=true]': {
+        // @ts-ignore
+        backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.secondary.main, 0.2) : 'primary.main',
+        // @ts-ignore
+        color: theme.palette.mode === 'dark' ? theme.palette.secondary.main : 'primary.main'
+    },
+}))
 
 export default function ToggleLanguageButton() {
     const { i18n } = useTranslation()

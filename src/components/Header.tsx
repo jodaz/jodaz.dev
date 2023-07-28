@@ -10,7 +10,8 @@ export default function Header() {
             sx={{
                 position: 'absolute',
                 top: 0,
-                right: 0
+                right: 0,
+                p: 1
             }}
         >
             <ToggleThemeButton />
