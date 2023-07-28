@@ -1,10 +1,10 @@
 import Layout from '@/layouts/main'
 import Cover from '@/views/Cover'
 import Head from 'next/head'
-import ToggleThemeButton from '@/components/ToggleThemeButton'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next';
 import { GetServerSideProps } from 'next'
+import Header from '@/components/Header'
 
 export default function Home() {
     const { t } = useTranslation('common');
@@ -21,7 +21,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Layout>
-				<ToggleThemeButton />
+                <Header />
 				<Cover />
 			</Layout>
 		</>
