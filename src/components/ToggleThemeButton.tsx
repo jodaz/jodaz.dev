@@ -1,6 +1,5 @@
 import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
-import Box from '@mui/material/Box';
+import { IconButton, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { ColorModeContext } from '@/providers/ToggleThemeProvider';
 import { SunIcon, MoonIcon } from '@/constants/icons';
@@ -18,13 +17,8 @@ const ToggleThemeButton = () => {
 				bgcolor: 'background.default',
 				color: 'text.primary',
 				textTransform: 'capitalize',
-				position: 'absolute',
-				top: 0,
-				right: 0,
-				p: 1
 			}}
 		>
-			{theme.palette.mode}
 			<IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
 				{theme.palette.mode === 'dark' ? <MoonIcon /> : <SunIcon />}
 			</IconButton>
