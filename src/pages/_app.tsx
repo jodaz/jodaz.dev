@@ -5,8 +5,9 @@ import { ThemeProvider } from '@mui/material'
 import { ColorModeContext } from '@/providers/ToggleThemeProvider'
 import theme from '@/theme'
 import { getTheme } from '@/utils/getTheme'
+import { appWithTranslation } from 'next-i18next';
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
 	const [mode, setMode] = React.useState<'light' | 'dark'>(getTheme());
 
 	const colorMode = React.useMemo(() => ({
@@ -23,3 +24,5 @@ export default function App({ Component, pageProps }: AppProps) {
 		</ColorModeContext.Provider>
 	)
 }
+
+export default appWithTranslation(App)
