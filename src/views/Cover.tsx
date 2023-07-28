@@ -1,12 +1,11 @@
 import * as React from 'react'
-import { Typography } from "@mui/material";
-import { Box, Stack } from "@mui/system";
-import { Avatar } from '@/components/Avatar';
-import SocialIcons from '@/components/SocialIcons';
+import { Typography, Box, Stack } from "@mui/material";
+import { Avatar } from '@/components/Avatar'
 import { useTranslation } from 'next-i18next';
+import SocialIcons from '@/components/SocialIcons';
 
 const Cover = () => {
-    const { t } = useTranslation('common')
+    const { t } = useTranslation()
 
 	return (
 		<Box sx={{
