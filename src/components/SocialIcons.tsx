@@ -3,7 +3,6 @@ import {
 	Link
 } from "@mui/material";
 import {
-	TwitterIcon,
 	GithubIcon,
 	LinkedInIcon,
 	IconType,
