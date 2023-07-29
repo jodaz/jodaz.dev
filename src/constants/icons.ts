@@ -1,5 +1,4 @@
 export {
-	SiTwitter as TwitterIcon,
 	SiGmail as EmailIcon
 } from 'react-icons/si'
 
@@ -7,6 +6,10 @@ export {
 	TbBrandTelegram as TelegramIcon,
 	TbBrandGithub as GithubIcon
 } from 'react-icons/tb'
+
+export {
+    BiNews as BlogIcon
+} from 'react-icons/bi'
 
 export {
 	BsSunFill as SunIcon,

@@ -1,13 +1,14 @@
-import { 
+import {
 	Stack,
 	Link
 } from "@mui/material";
-import { 
+import {
 	TwitterIcon,
 	GithubIcon,
 	LinkedInIcon,
 	IconType,
-	TelegramIcon
+	TelegramIcon,
+    BlogIcon
 } from "@/constants/icons";
 import { SOCIAL_LINKS } from "@/constants/social-links";
 
@@ -29,13 +30,13 @@ const SocialIcon: React.FC<SocialIconProps> = ({ href, CustomIcon, size = 'md' }
 
 const SocialIcons = () => (
 	<Stack
-		direction="row" 
+		direction="row"
 		spacing={2}
 	>
 		<SocialIcon href={SOCIAL_LINKS.linkedin} CustomIcon={LinkedInIcon} />
 		<SocialIcon href={SOCIAL_LINKS.github} CustomIcon={GithubIcon} />
 		<SocialIcon href={SOCIAL_LINKS.telegram} CustomIcon={TelegramIcon} />
-		<SocialIcon href={SOCIAL_LINKS.twitter} CustomIcon={TwitterIcon} />
+		<SocialIcon href={SOCIAL_LINKS.blog} CustomIcon={BlogIcon} />
 	</Stack>
 )
 
