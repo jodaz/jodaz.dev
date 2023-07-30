@@ -178,6 +178,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/poppins@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.5.tgz#6a198e164f89c916ad80e1798deddb6837a0cdeb"
+  integrity sha512-Y/AGmD6iavfobRb7f2l49q0dQSyisvRrUfJ7F0AWOlTNFty8bbnPBbg+5Qsq5EN6xWaIAn++50aLfOCEe7zu3w==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"

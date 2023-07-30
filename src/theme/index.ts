@@ -1,9 +1,10 @@
+import "@fontsource/poppins"
 import { createTheme, alpha } from '@mui/material/styles';
 import { PaletteMode } from '@mui/material';
 
 const theme = (mode: PaletteMode) => createTheme({
     typography: {
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Poppins, sans-serif',
 		h6: {
 			fontSize: '1.5rem'
 		},
@@ -143,7 +144,7 @@ const theme = (mode: PaletteMode) => createTheme({
             styleOverrides: {
                 root:({ theme }) => ({
                     '&:hover': {
-						color: (mode === 'dark') 
+						color: (mode === 'dark')
 							? `${alpha(theme.palette.secondary.main, 0.8)}`
 							: `${alpha(theme.palette.primary.main, 0.8)}`
 					}
