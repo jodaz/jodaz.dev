@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material"
+import { Box } from "@mui/material"
 import { Footer } from "@/components/Footer"
 import { LayoutProps } from "@/types"
 import { Header } from "@/components/Header"
