@@ -9,8 +9,9 @@ const Cover = () => {
 
 	return (
 		<Box sx={{
-			width: '100%',
+			width: { xs: '100%', md: '80%' },
 			display: 'flex',
+            alignSelf: 'center',
 			justifyContent: 'center',
 			alignItems: 'center',
 			flexDirection: { xs: 'column', sm: 'column', lg: 'row' }
