@@ -3,5 +3,9 @@
 	"title": "Jesus Ordosgoitty",
 	"salute": "Hi!, I'm a ",
 	"position": "Frontend developer",
-	"bio": "with 5+ years of experience as a Web Developer working with ReactJS, NodeJS, and Laravel. Experienced in agile teams, debugging, and optimizing web applications."
+	"bio": "with 5+ years of experience as a Web Developer working with ReactJS, NodeJS, and Laravel. Experienced in agile teams, debugging, and optimizing web applications.",
+    "footer": {
+        "intro": "This website is ",
+        "link": "open source."
+    }
 }
