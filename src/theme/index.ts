@@ -24,6 +24,9 @@ const theme = (mode: PaletteMode) => createTheme({
 			primary: (mode === 'dark') ? '#fff' : '#161B24',
 			secondary: '#757E8A'
 		},
+        info: {
+            main: '#1C4C96'
+        },
 		divider: '#ccc',
 		background: {
 			default: (mode === 'dark') ? '#161B24' : '#EDF0F'
@@ -143,6 +146,8 @@ const theme = (mode: PaletteMode) => createTheme({
         MuiLink: {
             styleOverrides: {
                 root:({ theme }) => ({
+                    color: theme.palette.text.primary,
+                    textDecoration: 'underline',
                     '&:hover': {
 						color: (mode === 'dark')
 							? `${alpha(theme.palette.secondary.main, 0.8)}`
