@@ -1,10 +1,9 @@
 import * as React from 'react'
-import { Typography, Box, Stack, Link } from "@mui/material";
+import { Typography, Box, Stack } from "@mui/material";
 import { Avatar } from '@/components/Avatar'
 import { useTranslation } from 'next-i18next';
 import SocialIcons from '@/components/SocialIcons';
-import NextLink from 'next/link';
-import { INTERNAL_LINKS } from '@/constants/internal-links';
+import Navigation from '@/components/Navigation';
 
 const Cover = () => {
     const { t } = useTranslation('common')
@@ -37,16 +36,7 @@ const Cover = () => {
                     {t('salute')} {t('position')} {t('bio')}
 				</Typography>
 				<SocialIcons />
-                <Stack spacing={2} direction='row'>
-                    {INTERNAL_LINKS.map(link => (
-                        <Link
-                            component={NextLink}
-                            href={link.route}
-                        >
-                            {link.page}
-                        </Link>
-                    ))}
-                </Stack>
+                <Navigation />
 			</Stack>
 			<Box p={2}>
 				<Avatar />
