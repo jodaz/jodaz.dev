@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 import SocialIcons from '@/components/SocialIcons';
 
 const Cover = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('common')
 
 	return (
 		<Box sx={{

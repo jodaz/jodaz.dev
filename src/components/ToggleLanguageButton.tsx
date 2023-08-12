@@ -18,7 +18,7 @@ const Button = styled(ToggleButton)(({ theme }) => ({
 }))
 
 export default function ToggleLanguageButton() {
-    const { i18n } = useTranslation()
+    const { i18n } = useTranslation('common')
     const router = useRouter()
     const [lang, setLang] = React.useState('');
 

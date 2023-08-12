@@ -1,7 +1,7 @@
 import { Box } from "@mui/material"
-import { Footer } from "@/components/Footer"
 import { LayoutProps } from "@/types"
 import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (

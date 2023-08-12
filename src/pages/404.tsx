@@ -1,12 +1,12 @@
 import NextLink from 'next/link'
 import Layout from "@/layouts/main"
 import { Link, Stack, Typography } from "@mui/material"
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetStaticProps } from 'next'
 
 const NotFoundPage = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('notfound')
 
     return (
         <Layout>
