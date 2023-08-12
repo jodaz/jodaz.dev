@@ -2,6 +2,7 @@ import { Box, Stack } from "@mui/material";
 import ToggleLanguageButton from "./ToggleLanguageButton";
 import ToggleThemeButton from "./ToggleThemeButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
     return (
@@ -9,12 +10,14 @@ export function Header() {
             minHeight: { xs: '8vh', md: '10vh' }
         }}>
             <Box mt={2} ml={3} alignSelf='center'>
-                <Image
-                    src={'/android-chrome-512x512.png'}
-                    alt="Logo"
-                    width='30'
-                    height='30'
-                />
+                <Link href='/'>
+                    <Image
+                        src={'/android-chrome-512x512.png'}
+                        alt="Logo"
+                        width='30'
+                        height='30'
+                    />
+                </Link>
             </Box>
             <Stack
                 spacing={1}
