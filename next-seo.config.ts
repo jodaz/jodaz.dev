@@ -81,5 +81,9 @@ const seo = {
 	]
 }
 
-export { seo as defaultSeo, url as defaultUrl }
+export {
+    seo as defaultSeo,
+    url as defaultUrl,
+    title as defaultTitle
+}
 export default seo
