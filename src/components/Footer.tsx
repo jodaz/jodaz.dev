@@ -1,8 +1,16 @@
+import React, { useEffect, useState } from 'react'
 import { Box, Link, Typography } from "@mui/material"
 import { useTranslation } from "react-i18next"
 
 export const Footer: React.FC = () => {
-    const { t } = useTranslation();
+    const [initialRender, setInitialRender] = useState(false)
+    const { t } = useTranslation('common');
+
+    React.useEffect(() => {
+        setInitialRender(true)
+    }, [])
+
+    if (!initialRender) return <></>
 
     return (
         <Box textAlign='center' component='footer' sx={{
