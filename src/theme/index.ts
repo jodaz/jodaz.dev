@@ -25,7 +25,8 @@ const theme = (mode: PaletteMode) => createTheme({
 			secondary: '#757E8A'
 		},
         info: {
-            main: '#1C4C96'
+            main: '#1C4C96',
+            light: '#0b5ef3'
         },
 		divider: '#ccc',
 		background: {
@@ -148,10 +149,9 @@ const theme = (mode: PaletteMode) => createTheme({
                 root:({ theme }) => ({
                     color: theme.palette.text.primary,
                     textDecoration: 'underline',
+                    transition: '0.3s',
                     '&:hover': {
-						color: (mode === 'dark')
-							? `${alpha(theme.palette.secondary.main, 0.8)}`
-							: `${alpha(theme.palette.primary.main, 0.8)}`
+						color: `${alpha(theme.palette.info.light, 0.8)}`
 					}
                 })
             }
