@@ -1,8 +1,17 @@
 import * as React from 'react'
-import { Typography, Box, Stack } from "@mui/material";
+import { Typography, Box, Stack, styled } from "@mui/material";
 import { Avatar } from '@/components/Avatar'
 import { useTranslation } from 'next-i18next';
 import SocialIcons from '@/components/SocialIcons';
+import Navigation from '@/components/Navigation';
+
+const Name = styled(Typography)(({ theme }) => ({
+    fontWeight: 700,
+    color: (theme.palette.mode == 'dark')
+        ? theme.palette.info.light
+        : theme.palette.info.main
+}));
+
 
 const Cover = () => {
     const { t } = useTranslation('common')
@@ -17,17 +26,17 @@ const Cover = () => {
 			flexDirection: { xs: 'column', sm: 'column', lg: 'row' }
 		}}>
 			<Stack
-				spacing={2}
+				spacing={3}
 				mb={2}
 				p={2}
 			>
-				<Typography
-					variant='h6'
-					fontWeight={700}
+				<Name
+					variant='h4'
+					fontWeight={900}
 					gutterBottom
 				>
                     {t('title')}
-				</Typography>
+				</Name>
 				<Typography
 					variant='subtitle1'
 					gutterBottom
@@ -35,6 +44,7 @@ const Cover = () => {
                     {t('salute')} {t('position')} {t('bio')}
 				</Typography>
 				<SocialIcons />
+                <Navigation />
 			</Stack>
 			<Box p={2}>
 				<Avatar />

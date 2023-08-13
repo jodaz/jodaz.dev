@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
     const [initialRender, setInitialRender] = useState(false)
     const { t } = useTranslation('common');
 
-    React.useEffect(() => {
+    useEffect(() => {
         setInitialRender(true)
     }, [])
 
