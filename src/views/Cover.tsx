@@ -18,7 +18,6 @@ const Cover = () => {
 
 	return (
 		<Box sx={{
-			width: { xs: '100%', md: '80%' },
 			display: 'flex',
             alignSelf: 'center',
 			justifyContent: 'center',
