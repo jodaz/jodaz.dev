@@ -16,7 +16,7 @@ const About = () => {
             <Layout>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5} display='flex' justifyContent='center'>
-                        <Avatar />
+                        <Avatar style={{ borderRadius: '12px' }} />
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography variant="h3" fontWeight={900} gutterBottom>

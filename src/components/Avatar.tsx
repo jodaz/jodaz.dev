@@ -1,26 +1,38 @@
 import * as React from 'react'
 import Image from 'next/image'
 import {
-	Box
+	Box,
+    AvatarProps
 } from '@mui/material'
 
-export const Avatar = () => {
+interface IAvatar extends AvatarProps {
+   height?: number;
+   width?: number;
+   style?: any
+}
 
+export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, ...rest }) => {
 	return (
 		<Box sx={{
 			width: 'fit-content',
 			height: 'fit-content',
 			boxSizing: 'content-box',
-			borderRadius: '25px'
-		}}>
+            ...sx
+		}} {...rest}>
 			<Image
 				src="/images/avatar.jpeg"
 				alt="avatar"
-				width={200}
-				height={200}	
+				width={width}
+				height={height}
 				blurDataURL='/images/blurred-image.jpg'
 				placeholder="blur"
+                style={style}
 			/>
 		</Box>
 	)
+}
+
+Avatar.defaultProps = {
+    height: 200,
+    width: 200
 }
