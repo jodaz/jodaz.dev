@@ -8,7 +8,8 @@ export {
 } from 'react-icons/tb'
 
 export {
-    BiNews as BlogIcon
+    BiNews as BlogIcon,
+    BiLogoUpwork as UpworkIcon
 } from 'react-icons/bi'
 
 export {
