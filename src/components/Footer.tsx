@@ -20,6 +20,8 @@ export const Footer: React.FC = () => {
             <Typography color='text.primary' variant="subtitle2">
                 {t('footer.intro')}
                 <Link href="https://github.com/jodaz/website">{t('footer.link')}</Link>
+                {' '}
+                ☕
             </Typography>
         </Box>
     )

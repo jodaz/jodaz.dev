@@ -7,7 +7,8 @@ import {
 	LinkedInIcon,
 	IconType,
 	TelegramIcon,
-    BlogIcon
+    BlogIcon,
+    UpworkIcon
 } from "@/constants/icons";
 import { SOCIAL_LINKS } from "@/constants/social-links";
 
@@ -35,6 +36,7 @@ const SocialIcons = () => (
 		<SocialIcon href={SOCIAL_LINKS.linkedin} CustomIcon={LinkedInIcon} />
 		<SocialIcon href={SOCIAL_LINKS.github} CustomIcon={GithubIcon} />
 		<SocialIcon href={SOCIAL_LINKS.telegram} CustomIcon={TelegramIcon} />
+        <SocialIcon href={SOCIAL_LINKS.upwork} CustomIcon={UpworkIcon} />
 		<SocialIcon href={SOCIAL_LINKS.blog} CustomIcon={BlogIcon} />
 	</Stack>
 )
