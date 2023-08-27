@@ -10,13 +10,13 @@ const WorkExperience = ({
     item, index
 }: IProps) => (
     <Box key={index}>
-        <Typography variant="subtitle1" fontWeight={900} color="info.main">
+        <Typography variant="subtitle2" textTransform='uppercase' fontWeight={700} color="info.light">
             {item.position}
         </Typography>
         <Typography variant="subtitle2" fontWeight={900} textTransform='uppercase'>
             {item.business_name}
         </Typography>
-        <Typography variant="subtitle2" fontWeight={300}>
+        <Typography variant="subtitle2" fontWeight={300} fontSize='12px'>
             {item.years}
         </Typography>
     </Box>
