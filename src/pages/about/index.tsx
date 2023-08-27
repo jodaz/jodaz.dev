@@ -51,7 +51,7 @@ const About = () => {
                         </Typography>
                         <Stack spacing={2}>
                             {workExperiences.map((item: IWorkExperience, i) => (
-                                <WorkExperience key={i} {...item} />
+                                <WorkExperience index={i} item={item} />
                             ))}
                         </Stack>
                     </Grid>
