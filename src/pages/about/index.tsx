@@ -12,7 +12,7 @@ import WorkExperience from "./components/WorkExperience"
 const About = () => {
     const { t } = useTranslation('about')
 
-    const workExperiences: [IWorkExperience] = t('works_array', { returnObjects: true })
+    const workExperiences: [IWorkExperience] = t('experiences', { returnObjects: true })
 
     return (
         <>
@@ -35,10 +35,13 @@ const About = () => {
                             <Typography variant="h3" fontWeight={900} gutterBottom>
                                 {t('page_title')}
                             </Typography>
-                            <Typography variant="subtitle2" fontWeight={900} gutterBottom>
-                                {t('brief')}
-                            </Typography>
-                            <Typography variant="subtitle2" fontWeight={900} gutterBottom>
+                            <Typography
+                                fontSize='15px'
+                                variant="subtitle1"
+                                fontWeight={900}
+                                gutterBottom
+                                sx={{ whiteSpace: 'pre-line'}}
+                            >
                                 {t('bio')}
                             </Typography>
                         </Stack>

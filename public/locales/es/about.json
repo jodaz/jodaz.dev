@@ -1,9 +1,8 @@
 {
     "page_title": "Sobre mí",
-    "brief": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
-    "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. ",
+    "bio": "¡Hola! Mi nombre es Jesús Ordosgoitty.\n\n Me considero un desarrollador Full―Stack enfocado en el Frontend con más de 4 años de experiencia en el campo. Me gusta aprender cosas nuevas y mantenerme actualizado en el mundo de la programación. Me gusta trabajar en proyectos ambiciosos junto a profesionales que se preocupan tanto por la calidad del desarrollo de software como yo. Por eso, siempre busco nuevas formas de mejorar mis habilidades.",
     "works": "Experiencia laboral",
-    "works_array": [
+    "experiences": [
         {
             "business_name": "Alaxatech, Agencia Digital",
             "years": "Oct. 2022 ― Jul. 2023",

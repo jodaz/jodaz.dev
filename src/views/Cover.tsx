@@ -12,7 +12,6 @@ const Name = styled(Typography)(({ theme }) => ({
         : theme.palette.info.main
 }));
 
-
 const Cover = () => {
     const { t } = useTranslation('common')
 

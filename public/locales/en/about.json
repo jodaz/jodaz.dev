@@ -1,9 +1,8 @@
 {
     "page_title": "About me",
-    "brief": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
-    "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. ",
+    "bio": "Hello! My name is Jesús Ordosgoitty.\n\n I consider myself a Full―Stack developer focused on the Frontend with over 4 years of experience in the field. I enjoy learning new things and staying up to date with Frontend development. I like working on ambitious projects alongside professionals who are as passionate about software development quality as I am. That's why I'm always looking for new ways to improve my skills.",
     "works": "Work experience",
-    "works_array": [
+    "experiences": [
         {
             "business_name": "Alaxatech, Digital Agency",
             "years": "Oct. 2022 ― Jul. 2023",
