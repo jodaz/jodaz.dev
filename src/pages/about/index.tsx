@@ -4,11 +4,15 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetStaticProps } from 'next'
 import { NextSeo } from "next-seo"
-import seo from "next-seo.config"
 import { Avatar } from "@/components/Avatar"
+import { IWorkExperience } from "@/types/models"
+import seo from "next-seo.config"
+import WorkExperience from "./components/WorkExperience"
 
 const About = () => {
     const { t } = useTranslation('about')
+
+    const workExperiences: [IWorkExperience] = t('works_array', { returnObjects: true })
 
     return (
         <>
@@ -45,16 +49,10 @@ const About = () => {
                         <Typography variant="h6" fontWeight={900} gutterBottom>
                             {t('works')}
                         </Typography>
-                        <Stack spacing={0}>
-                            <Typography variant="subtitle2" fontWeight={900}>
-                                2019 - 2022
-                            </Typography>
-                            <Typography variant="subtitle1" fontWeight={900}>
-                                Puesto
-                            </Typography>
-                            <Typography variant="subtitle2" fontWeight={900}>
-                                Empresa
-                            </Typography>
+                        <Stack spacing={2}>
+                            {workExperiences.map((item: IWorkExperience, i) => (
+                                <WorkExperience key={i} {...item} />
+                            ))}
                         </Stack>
                     </Grid>
                 </Grid>

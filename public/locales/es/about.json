@@ -2,5 +2,27 @@
     "page_title": "Sobre mí",
     "brief": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. ",
-    "works": "Trabajos"
+    "works": "Experiencia laboral",
+    "works_array": [
+        {
+            "business_name": "Alaxatech, Agencia Digital",
+            "years": "Oct. 2022 ― Jul. 2023",
+            "position": "Desarrollador Frontend"
+        },
+        {
+            "business_name": "Alaxatech, Agencia Digital",
+            "years": "Ene. 2021 ― Jul. 2023",
+            "position": "Desarrollador FullStack"
+        },
+        {
+            "business_name": "Alcaldía del Municipio Bermúdez",
+            "years": "Oct. 2022 ― Jul. 2023",
+            "position": "Desarrollador y Soporte IT"
+        },
+        {
+            "business_name": "Alcaldía del Municipio Bermúdez",
+            "years": "Nov. 2020 ― Nov. 2021",
+            "position": "Jefe de Desarrollo Web y Marketing Digital"
+        }
+    ]
 }
