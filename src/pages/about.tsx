@@ -7,8 +7,8 @@ import { NextSeo } from "next-seo"
 import { Avatar } from "@/components/Avatar"
 import { IWorkExperience } from "@/types/models"
 import seo from "next-seo.config"
-import WorkExperience from "./components/WorkExperience"
-import TechStack from "./components/TechStack"
+import WorkExperience from "@/components/WorkExperience"
+import TechStack from "@/components/TechStack"
 
 const About = () => {
     const { t } = useTranslation('about')
