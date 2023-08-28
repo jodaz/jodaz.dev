@@ -16,10 +16,11 @@ const Navigation = () => {
 
 	return (
         <Stack spacing={2} direction='row'>
-            {INTERNAL_LINKS.map(link => (
+            {INTERNAL_LINKS.map((link, i) => (
                 <Link
                     component={NextLink}
                     href={link.route}
+                    key={i}
                 >
                     {t(link.page)}
                 </Link>

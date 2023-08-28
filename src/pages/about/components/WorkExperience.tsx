@@ -2,14 +2,14 @@ import { Typography, Box } from "@mui/material"
 import { IWorkExperience } from "@/types/models"
 
 interface IProps {
-    index: number;
+    key: number;
     item: IWorkExperience
 }
 
 const WorkExperience = ({
-    item, index
+    item, key
 }: IProps) => (
-    <Box key={index}>
+    <Box key={key}>
         <Typography variant="subtitle2" textTransform='uppercase' fontWeight={700} color="info.light">
             {item.position}
         </Typography>

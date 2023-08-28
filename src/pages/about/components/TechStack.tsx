@@ -4,9 +4,10 @@ import {
 import { IconType } from "@/constants/icons";
 import { SKILLS } from "@/constants/skills";
 
-interface SocialIconProps {
+interface TechIcon {
     name: string;
-	Icon: IconType
+	Icon: IconType;
+    key: number;
 }
 
 const IconWrapper = styled(Box)(({ theme }) => ({
@@ -20,16 +21,13 @@ const IconWrapper = styled(Box)(({ theme }) => ({
     }
 }))
 
-const TechIcon: React.FC<SocialIconProps> = ({ Icon, name }) => {
-
-	return (
-        <Tooltip title={name}>
-            <IconWrapper>
-                <Icon size='3rem' />
-            </IconWrapper>
-        </Tooltip>
-	)
-}
+const TechIcon = ({ key, Icon, name }: TechIcon ) => (
+    <Tooltip title={name} key={key}>
+        <IconWrapper>
+            <Icon size='3rem' />
+        </IconWrapper>
+    </Tooltip>
+)
 
 const TechStack = () => (
 	<Stack
@@ -37,7 +35,7 @@ const TechStack = () => (
 		spacing={3}
         flexWrap='wrap'
 	>
-        {SKILLS.map(skill => <TechIcon {...skill} />)}
+        {SKILLS.map((skill, i) => <TechIcon key={i} {...skill} />)}
 	</Stack>
 )
 
