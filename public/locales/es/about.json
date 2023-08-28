@@ -6,23 +6,29 @@
     "experiences": [
         {
             "business_name": "Alaxatech, Agencia Digital",
-            "years": "Oct. 2022 ― Jul. 2023",
-            "position": "Desarrollador Frontend"
-        },
-        {
-            "business_name": "Alaxatech, Agencia Digital",
-            "years": "Ene. 2021 ― Jul. 2023",
-            "position": "Desarrollador FullStack"
-        },
-        {
-            "business_name": "Alcaldía del Municipio Bermúdez",
-            "years": "Oct. 2022 ― Jul. 2023",
-            "position": "Desarrollador y Soporte IT"
-        },
-        {
-            "business_name": "Alcaldía del Municipio Bermúdez",
-            "years": "Nov. 2020 ― Nov. 2021",
-            "position": "Jefe de Desarrollo Web y Marketing Digital"
+            "positions": [
+                    {
+                        "years": "Oct. 2022 ― Jul. 2023",
+                        "title": "Desarrollador Frontend"
+                    },
+                    {
+                        "years": "Ene. 2021 ― Jul. 2023",
+                        "title": "Desarrollador FullStack"
+                    }
+                ]
+            },
+            {
+            "business_name": "Oficina de Gobierno del Municipio Bermúdez",
+            "positions": [
+                {
+                    "years": "Oct. 2022 ― Jul. 2023",
+                    "title": "Desarrollador y Soporte de TI"
+                },
+                {
+                    "years": "Nov. 2020 ― Nov. 2021",
+                    "title": "Jefe de Desarrollo Web y Marketing Digital"
+                }
+            ]
         }
     ]
 }

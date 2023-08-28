@@ -39,7 +39,8 @@ export {
 
 export {
 	BsSunFill as SunIcon,
-	BsMoonStars as MoonIcon
+	BsMoonStars as MoonIcon,
+    BsDot as Dot
 } from 'react-icons/bs'
 
 export { FaLinkedinIn as LinkedInIcon } from 'react-icons/fa'

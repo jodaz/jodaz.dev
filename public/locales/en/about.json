@@ -2,27 +2,32 @@
     "page_title": "About me",
     "bio": "Hello! My name is Jesús Ordosgoitty.\n\n I consider myself a Full―Stack developer focused on the Frontend with over 4 years of experience in the field. I enjoy learning new things and staying up to date with Frontend development. I like working on ambitious projects alongside professionals who are as passionate about software development quality as I am. That's why I'm always looking for new ways to improve my skills.",
     "works": "Work experience",
-    "skills": "Liked tech",
     "experiences": [
         {
             "business_name": "Alaxatech, Digital Agency",
-            "years": "Oct. 2022 ― Jul. 2023",
-            "position": "Frontend Developer"
-        },
-        {
-            "business_name": "Alaxatech, Digital Agency",
-            "years": "Jan. 2021 ― Jul. 2023",
-            "position": "FullStack Developer"
+            "positions": [
+                {
+                    "years": "Oct. 2022 ― Jul. 2023",
+                    "title": "Frontend Developer"
+                },
+                {
+                    "years": "Jan. 2021 ― Jul. 2023",
+                    "title": "FullStack Developer"
+                }
+            ]
         },
         {
             "business_name": "Bermudez Municipality Government Office",
-            "years": "Oct. 2022 ― Jul. 2023",
-            "position": "Developer and IT Support"
-        },
-        {
-            "business_name": "Bermudez Municipality Government Office",
-            "years": "Nov. 2020 ― Nov. 2021",
-            "position": "Head of Web Development & Digital Marketing"
+            "positions": [
+                {
+                    "years": "Oct. 2022 ― Jul. 2023",
+                    "title": "Developer and IT Support"
+                },
+                {
+                    "years": "Nov. 2020 ― Nov. 2021",
+                    "title": "Head of Web Development & Digital Marketing"
+                }
+            ]
         }
     ]
 }
