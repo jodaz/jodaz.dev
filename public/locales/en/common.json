@@ -4,8 +4,8 @@
 	"salute": "Hi!, I'm a ",
     "About": "About",
     "Projects": "Projects",
-	"position": "Frontend developer",
-	"bio": "with 5+ years of experience as a Web Developer working with ReactJS, NodeJS, and Laravel. Experienced in agile teams, debugging, and optimizing web applications.",
+	"position": "Developer",
+	"bio": "with 4+ years of experience as a Web Developer working with ReactJS, NodeJS, and Laravel. Experienced in agile teams, debugging, and optimizing web applications.",
     "footer": {
         "intro": "This website is ",
         "link": "open source."
