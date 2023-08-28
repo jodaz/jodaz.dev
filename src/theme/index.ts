@@ -24,6 +24,10 @@ const theme = (mode: PaletteMode) => createTheme({
 			primary: (mode === 'dark') ? '#fff' : '#161B24',
 			secondary: '#757E8A'
 		},
+        info: {
+            main: '#1C4C96',
+            light: '#0b5ef3'
+        },
 		divider: '#ccc',
 		background: {
 			default: (mode === 'dark') ? '#161B24' : '#EDF0F'
@@ -128,25 +132,16 @@ const theme = (mode: PaletteMode) => createTheme({
         },
         MuiTooltip: {
             styleOverrides: {
-                tooltip: () => ({
-                    backgroundColor: '#fff',
-                    boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.15)',
-                    borderRadius: '5px',
-                    fontSize: '12px',
-                    fontWeight: 400,
-                    padding: '12px',
-                    lineHeight: '16px',
-                    maxWidth: '160px'
-                })
             }
         },
         MuiLink: {
             styleOverrides: {
                 root:({ theme }) => ({
+                    color: theme.palette.text.primary,
+                    textDecoration: 'underline',
+                    transition: '0.3s',
                     '&:hover': {
-						color: (mode === 'dark')
-							? `${alpha(theme.palette.secondary.main, 0.8)}`
-							: `${alpha(theme.palette.primary.main, 0.8)}`
+						color: `${alpha(theme.palette.info.light, 0.8)}`
 					}
                 })
             }

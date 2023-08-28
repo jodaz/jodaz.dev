@@ -16,11 +16,12 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Header />
             <Box sx={{
                 display: 'flex',
-                width: '100%',
+                alignSelf: 'center',
                 minHeight: { xs: '84vh', md: '80vh' },
+                width: { xs: '100%', md: '80%' },
                 justifyContent: 'center',
                 flexDirection: 'column',
-                padding: '0 2rem'
+                padding: '3rem 2rem'
             }}>
                 {children}
             </Box>
