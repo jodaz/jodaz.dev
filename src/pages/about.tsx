@@ -39,7 +39,7 @@ const About = () => {
                             <Typography
                                 fontSize='15px'
                                 variant="subtitle1"
-                                fontWeight={900}
+                                fontWeight={300}
                                 gutterBottom
                                 sx={{ whiteSpace: 'pre-line'}}
                             >
