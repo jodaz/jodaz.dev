@@ -11,6 +11,7 @@ const Item = styled(ListItem)(() => ({
     alignItems: 'start',
     paddingTop: '1rem',
     paddingBottom: '1rem',
+    paddingLeft: '8px'
 }))
 
 const PositionContainer = styled(Box)(({ theme }) => ({
@@ -39,17 +40,26 @@ const WorkExperience = ({
         <Typography variant="subtitle1" fontWeight={900}>
             {item.business_name}
         </Typography>
-        <List>
+        <List disablePadding>
             {item.positions.map((position: IPosition, index) => (
                 <Item key={index}>
                     <DotContainer>
                         <Dot size='3rem' />
                     </DotContainer>
                     <PositionContainer>
-                        <Typography variant="subtitle1" textTransform='uppercase' fontWeight={700} color="info.light">
+                        <Typography
+                            variant="subtitle1"
+                            textTransform='uppercase'
+                            fontWeight={700}
+                            color="info.light"
+                        >
                             {position.title}
                         </Typography>
-                        <Typography variant="subtitle1" fontWeight={300} fontSize='12px'>
+                        <Typography
+                            variant="subtitle1"
+                            fontWeight={300}
+                            fontSize='12px'
+                        >
                             {position.years}
                         </Typography>
                     </PositionContainer>
