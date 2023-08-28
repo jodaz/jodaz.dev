@@ -8,6 +8,7 @@ import { Avatar } from "@/components/Avatar"
 import { IWorkExperience } from "@/types/models"
 import seo from "next-seo.config"
 import WorkExperience from "./components/WorkExperience"
+import TechStack from "./components/TechStack"
 
 const About = () => {
     const { t } = useTranslation('about')
@@ -57,6 +58,12 @@ const About = () => {
                                 <WorkExperience index={i} item={item} />
                             ))}
                         </Stack>
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <Typography variant="h6" fontWeight={900} gutterBottom>
+                            {t('skills')}
+                        </Typography>
+                        <TechStack />
                     </Grid>
                 </Grid>
             </Layout>

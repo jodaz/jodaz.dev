@@ -132,16 +132,6 @@ const theme = (mode: PaletteMode) => createTheme({
         },
         MuiTooltip: {
             styleOverrides: {
-                tooltip: () => ({
-                    backgroundColor: '#fff',
-                    boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.15)',
-                    borderRadius: '5px',
-                    fontSize: '12px',
-                    fontWeight: 400,
-                    padding: '12px',
-                    lineHeight: '16px',
-                    maxWidth: '160px'
-                })
             }
         },
         MuiLink: {

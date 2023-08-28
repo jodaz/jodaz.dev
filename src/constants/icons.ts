@@ -1,5 +1,14 @@
 export {
-	SiGmail as EmailIcon
+	SiGmail as EmailIcon,
+    SiMui as Mui,
+    SiLaravel as Laravel,
+    SiPostgresql as Postgres,
+    SiExpress as ExpressJS,
+    SiReacthookform as ReactHookForm,
+    SiStyledcomponents as StyledComponents,
+    SiTailwindcss as TailwindCSS,
+    SiGithubactions as GithubActions,
+    SiDigitalocean as DigitalOcean
 } from 'react-icons/si'
 
 export {
@@ -12,12 +21,20 @@ export {
 
 export {
 	TbBrandTelegram as TelegramIcon,
-	TbBrandGithub as GithubIcon
+	TbBrandGithub as GithubIcon,
+    TbBrandNextjs as NextJS,
+    TbBrandReactNative as ReactNative,
+    TbBrandMysql as MySQL,
+    TbBrandVercel as Vercel,
+    TbBrandSocketIo as SocketIO
 } from 'react-icons/tb'
 
 export {
     BiNews as BlogIcon,
-    BiLogoUpwork as UpworkIcon
+    BiLogoUpwork as UpworkIcon,
+    BiLogoTypescript as Typescript,
+    BiLogoReact as React,
+    BiLogoPhp as PHP
 } from 'react-icons/bi'
 
 export {
