@@ -5,6 +5,24 @@
     "skills": "Tech preferidas",
     "experiences": [
         {
+            "business_name": "Ommcode (Stampfeet)",
+            "positions": [
+                {
+                    "years": "Sept. 2023 ― Actualidad",
+                    "title": "Desarrollador Frontend"
+                }
+            ]
+        },
+        {
+            "business_name": "Upwork",
+            "positions": [
+                {
+                    "years": "Sept. 2023 ― Actualidad",
+                    "title": "Desarrollador Full-Stack independiente"
+                }
+            ]
+        },
+        {
             "business_name": "Alaxatech, Agencia Digital",
             "positions": [
                     {
