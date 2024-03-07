@@ -3,7 +3,7 @@
 const title = 'Jesus Ordosgoitty'
 const defaultTitle = `${title} - Software Developer`
 const description = "Hi!, my name is Jesus Ordosgoitty, a 98' born guy full-stack software developer from Venezuela venezuelaHi!, my name is Jesus Ordosgoitty, a 98' born guy full-stack software developer from Venezuela"
-const url = 'https://jodaz.xyz'
+const url = 'https://jodaz.dev'
 const ogImageUrl = '/images/og.png'
 const keywords =
 	'ordosgoitty, jodaz, jesus, jesus ordosgoitty, portfolio, javascript, typescript, developer, software engineer, frontend, front-end, venezuela, caribe, fullstack, full-stack, full stack, mobile, react, react native, native'
