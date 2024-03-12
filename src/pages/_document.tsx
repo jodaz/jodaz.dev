@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { GoogleAnalytics } from '@next/third-parties/google';
 import i18nextConfig from '../../next-i18next.config.js'
 
 export default function Document(props: any) {
@@ -9,12 +8,24 @@ export default function Document(props: any) {
 
     return (
         <Html lang={currentLocale}>
-          <Head />
+          <Head>
+                <script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=G-B0Q9QLJ4ES"
+                />
+                <script>
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-B0Q9QLJ4ES');
+                    `}
+                </script>
+           </Head>
           <body>
             <Main />
             <NextScript />
-            <GoogleAnalytics gaId='G-B0Q9QLJ4ES' />
-
           </body>
         </Html>
     )
