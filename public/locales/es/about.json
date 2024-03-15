@@ -5,20 +5,29 @@
     "skills": "Tech preferidas",
     "experiences": [
         {
-            "business_name": "Ommcode (Stampfeet)",
+            "business_name": "Tofu Lat.",
             "positions": [
                 {
-                    "years": "Sept. 2023 ― Actualidad",
+                    "years": "Oct. 2023 ― Current",
+                    "title": "Freelance Full-Stack Developer"
+                }
+            ]
+        },
+        {
+            "business_name": "Stampfeet Ltd.",
+            "positions": [
+                {
+                    "years": "Sept. 2023 ― Current",
                     "title": "Desarrollador Frontend"
                 }
             ]
         },
         {
-            "business_name": "Upwork",
+            "business_name": "Atene.ai",
             "positions": [
                 {
-                    "years": "Sept. 2023 ― Actualidad",
-                    "title": "Desarrollador Full-Stack independiente"
+                    "years": "Sept. 2023 ― Oct. 2023 ",
+                    "title": "Desarrollador Laravel"
                 }
             ]
         },
