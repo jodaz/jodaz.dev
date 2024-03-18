@@ -1,4 +1,19 @@
 {
     "page_title": "Proyectos",
-    "page_description": "Una selección de mis mejores trabajos."
+    "page_description": "Una selección de mis mejores trabajos.",
+    "projects": [
+        {
+            "name": "Circuito1App",
+            "description": "C1A (CircuitoUnoApp) es una aplicación web construida como PWA, cuyo objetivo es registrar y rastrear el flujo de votantes en cinco gobiernos locales del Estado Sucre durante las elecciones parlamentarias venezolanas (2020).",
+            "picture": "/images/npm.webp",
+            "github": "https://github.com/jodaz/votes",
+            "href": "https://votes.jodaz.dev"
+        },
+        {
+            "name": "SAI Frontend",
+            "description": "SAI es una aplicación web diseñada para optimizar y mejorar la gestión de servicios de atención social. Proporciona estadísticas y gráficos de asistencias para la toma de decisiones informadas y la asignación de recursos.",
+            "github": "https://github.com/jodaz/sai-frontend",
+            "picture": "/images/npm.webp"
+        }
+    ]
 }

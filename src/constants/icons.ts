@@ -33,7 +33,8 @@ export {
     BiLogoUpwork as UpworkIcon,
     BiLogoTypescript as Typescript,
     BiLogoReact as React,
-    BiLogoPhp as PHP
+    BiLogoPhp as PHP,
+    BiLink as LinkIcon
 } from 'react-icons/bi'
 
 export {
