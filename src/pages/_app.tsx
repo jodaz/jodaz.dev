@@ -6,6 +6,7 @@ import { ColorModeContext } from '@/providers/ToggleThemeProvider'
 import theme from '@/theme'
 import { getTheme } from '@/utils/getTheme'
 import { appWithTranslation } from 'next-i18next';
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 function App({ Component, pageProps }: AppProps) {
 	const [mode, setMode] = React.useState<'light' | 'dark'>(getTheme());
@@ -19,6 +20,7 @@ function App({ Component, pageProps }: AppProps) {
 	return (
 		<ColorModeContext.Provider value={colorMode}>
 			<ThemeProvider theme={theme(mode)}>
+                <GoogleAnalytics />
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</ColorModeContext.Provider>

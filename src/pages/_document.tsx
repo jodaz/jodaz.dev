@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { GoogleAnalytics } from '@next/third-parties/google';
 import i18nextConfig from '../../next-i18next.config.js'
 
 export default function Document(props: any) {
@@ -13,8 +12,6 @@ export default function Document(props: any) {
           <body>
             <Main />
             <NextScript />
-            <GoogleAnalytics gaId='G-B0Q9QLJ4ES' />
-
           </body>
         </Html>
     )
