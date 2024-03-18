@@ -8,7 +8,8 @@ import {
 	IconType,
 	TelegramIcon,
     BlogIcon,
-    UpworkIcon
+    UpworkIcon,
+    EmailIcon
 } from "@/constants/icons";
 import { SOCIAL_LINKS } from "@/constants/social-links";
 
@@ -33,6 +34,9 @@ const SocialIcons = () => (
 		direction="row"
 		spacing={2}
 	>
+        <Link href={'mailto:hello@jodaz.dev'} color='text.primary'>
+            <EmailIcon size='2rem' />
+        </Link>
 		<SocialIcon href={SOCIAL_LINKS.linkedin} CustomIcon={LinkedInIcon} />
 		<SocialIcon href={SOCIAL_LINKS.github} CustomIcon={GithubIcon} />
 		<SocialIcon href={SOCIAL_LINKS.telegram} CustomIcon={TelegramIcon} />

@@ -1,5 +1,4 @@
 export {
-	SiGmail as EmailIcon,
     SiMui as Mui,
     SiLaravel as Laravel,
     SiPostgresql as Postgres,
@@ -42,6 +41,8 @@ export {
 	BsMoonStars as MoonIcon,
     BsDot as Dot
 } from 'react-icons/bs'
+
+export { MdOutlineEmail as EmailIcon } from "react-icons/md";
 
 export { FaLinkedinIn as LinkedInIcon } from 'react-icons/fa'
 
