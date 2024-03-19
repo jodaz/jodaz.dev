@@ -36,19 +36,28 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
             <Stack
                 direction='column'
                 spacing={2}
+                sx={{
+                    minHeight: '450px',
+                    maxHeight: '450px'
+                }}
             >
-                <Box sx={{ flex: 1, borderRadius: '6px' }}>
+                <Box sx={{ borderRadius: '6px' }}>
                     <Image
                         src={item.picture}
                         alt="project"
-                        width="200"
-                        height='100'
+                        width="300"
+                        height='200'
                         style={{
                             borderRadius: 8
                         }}
                     />
                 </Box>
-                <Box sx={{ flex: 1, textAlign: 'left', pr: '20px' }}>
+                <Box sx={{
+                    textAlign: 'left',
+                    pr: '20px',
+                    flex: 1,
+                    height: '100%'
+                }}>
                     <Typography
                         variant='h6'
                         fontWeight={900}
@@ -59,21 +68,21 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                     <Typography fontWeight={300} gutterBottom>
                         {item.description}
                     </Typography>
-                    <Stack direction="row" spacing={2}>
-                        {item.github ? (
-                            <Item href={item.github} target='_blank'>
-                                <Code size='1rem' style={{ marginRight: '10px' }} />
-                                Source
-                            </Item>
-                        ) : null}
-                        {item.href ? (
-                            <Item href={item.href} target='_blank'>
-                                <LinkIcon size='1rem' style={{ marginRight: '10px' }} />
-                                Web
-                            </Item>
-                        ) : null}
-                    </Stack>
                 </Box>
+                <Stack direction="row" spacing={2}>
+                    {item.github ? (
+                        <Item href={item.github} target='_blank'>
+                            <Code size='1rem' style={{ marginRight: '10px' }} />
+                            Source
+                        </Item>
+                    ) : null}
+                    {item.href ? (
+                        <Item href={item.href} target='_blank'>
+                            <LinkIcon size='1rem' style={{ marginRight: '10px' }} />
+                            Web
+                        </Item>
+                    ) : null}
+                </Stack>
             </Stack>
         </Grid>
 	)

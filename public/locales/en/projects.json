@@ -3,6 +3,24 @@
     "page_description": "A selection of my best works - Currently building!",
     "projects": [
         {
+            "name": "VanguardDevs",
+            "description": "Website template designed for an agency, featuring a map of the location and showcasing the supported services.",
+            "href": "https://www.vanguards.dev",
+            "github": "https://github.com/VanguardDevs/vanguards.dev",
+            "picture": "/images/projects/VanguardDevs.png"
+        },
+        {
+            "name": "MiRewards Development Redesign",
+            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "picture": "/images/projects/MiRewards.png",
+            "href": "https://mi-rewards.com/"
+        },
+        {
+            "name": "Approbado",
+            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "picture": "/images/npm.webp"
+        },
+        {
             "name": "Circuito1App",
             "description": "C1A (CircuitoUnoApp) is a web application built as a PWA, which goal is to record and track the flow of voters in five local governments of the Sucre State during the venezuelan parlamentary elections (2020).",
             "picture": "/images/npm.webp",
@@ -14,6 +32,29 @@
             "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
             "github": "https://github.com/jodaz/sai-frontend",
             "picture": "/images/npm.webp"
+        },
+        {
+            "name": "Sauco",
+            "description": "SAUCO is a CRM platform tailored for tax collection and management.",
+            "github": "https://github.com/VanguardDevs/sauco",
+            "picture": "/images/npm.webp"
+        },
+        {
+            "name": "TinderDogs Frontend",
+            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "picture": "/images/npm.webp"
+        },
+        {
+            "name": "Perrfecto Frontend",
+            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "picture": "/images/npm.webp"
+        },
+        {
+            "name": "Markdown Previewer",
+            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "picture": "/images/projects/MarkdownPreviewer.png",
+            "github": "https://github.com/jodaz/markdown-previewer",
+            "href": "https://jodaz.github.io/markdown-previewer/"
         }
     ]
 }
