@@ -11,13 +11,13 @@
         },
         {
             "name": "MiRewards Development Redesign",
-            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "description":  "Redesign of a website for an agency (Stampfeet), with a focus on supporting a redemption process for rewards and localization.",
             "picture": "/images/projects/MiRewards.png",
             "href": "https://mi-rewards.com/"
         },
         {
             "name": "Approbado",
-            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "description": "Approbado  web application that offers a gamified e-learning experience based on trivia about subjects related to Lawyers.",
             "picture": "/images/npm.webp"
         },
         {
@@ -41,17 +41,17 @@
         },
         {
             "name": "TinderDogs Frontend",
-            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "description": "TinderDogs was an unique application inspired by the functionality of Tinder. Designed to connect pet lovers and local pet businesses, this platform offers a variety of features to enhance the pet ownership experience.",
             "picture": "/images/npm.webp"
         },
         {
             "name": "Perrfecto Frontend",
-            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "description": "Perrfecto is an Instagram inspired social media application that celebrates the love for dogs and pets. Includes features like a photo editor, real-time chat, and a friends following system.",
             "picture": "/images/npm.webp"
         },
         {
             "name": "Markdown Previewer",
-            "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
+            "description": "A simple mardown converter-visualizer app made for freeCodeCamp's Front-end development certification.",
             "picture": "/images/projects/MarkdownPreviewer.png",
             "github": "https://github.com/jodaz/markdown-previewer",
             "href": "https://jodaz.github.io/markdown-previewer/"
