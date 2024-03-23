@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { Box, IconButton, Stack, useMediaQuery, Link } from "@mui/material";
+import { Box, IconButton, Stack, useMediaQuery } from "@mui/material";
 import { Close, Menu } from "@/constants/icons";
 import { INTERNAL_LINKS } from '@/constants/internal-links';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
+import NavLink from './NavLink';
 import ToggleLanguageButton from "./ToggleLanguageButton";
 import ToggleThemeButton from "./ToggleThemeButton";
 import Image from "next/image";
@@ -15,13 +16,7 @@ const DesktopMenu = ({ i18n }) => {
     const isHomePage = router.pathname === '/';
 
     const renderLinks = () => INTERNAL_LINKS.map((link, i) => (
-        <Link
-            component={NextLink}
-            href={link.route}
-            key={i}
-        >
-            {i18n(link.page)}
-        </Link>
+        <NavLink route={link.route} i={i} name={i18n(link.page)} />
     ))
 
     return (
@@ -87,13 +82,7 @@ const MobileMenu = ({ i18n }) => {
                             <Close />
                         </IconButton>
                         {INTERNAL_LINKS.map((link, i) => (
-                            <Link
-                                component={NextLink}
-                                href={link.route}
-                                key={i}
-                            >
-                                {i18n(link.page)}
-                            </Link>
+                            <NavLink route={link.route} i={i} name={i18n(link.page)} />
                         ))}
                         <ToggleThemeButton />
                     </Stack>
@@ -121,14 +110,14 @@ export function Header() {
                     width: { xs: '100%', md: '50%' }
                 }}>
                     <Box mt={2} ml={3} alignSelf='center'>
-                        <Link href='/'>
+                        <NextLink href='/'>
                             <Image
                                 src={'/android-chrome-512x512.png'}
                                 alt="Logo"
                                 width='30'
                                 height='30'
                             />
-                        </Link>
+                        </NextLink>
                     </Box>
                 </Box>
                 {isSmall ? <MobileMenu i18n={t} /> : <DesktopMenu i18n={t} />}
