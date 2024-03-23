@@ -40,11 +40,15 @@ export {
 export {
 	BsSunFill as SunIcon,
 	BsMoonStars as MoonIcon,
-    BsDot as Dot
+    BsDot as Dot,
+    BsThreads as Threads,
+    BsInstagram as Instagram
 } from 'react-icons/bs'
 
 export { MdOutlineEmail as EmailIcon } from "react-icons/md";
 
-export { FaLinkedinIn as LinkedInIcon } from 'react-icons/fa'
+export {
+    FaLinkedinIn as LinkedInIcon
+} from 'react-icons/fa'
 
 export type { IconType } from 'react-icons'
