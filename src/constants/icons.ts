@@ -45,7 +45,11 @@ export {
     BsInstagram as Instagram
 } from 'react-icons/bs'
 
-export { MdOutlineEmail as EmailIcon } from "react-icons/md";
+export {
+    MdOutlineEmail as EmailIcon,
+    MdMenu as Menu,
+    MdClose as Close
+} from "react-icons/md";
 
 export {
     FaLinkedinIn as LinkedInIcon
