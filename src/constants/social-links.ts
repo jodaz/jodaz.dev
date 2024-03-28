@@ -3,7 +3,7 @@ export const SOCIAL_LINKS = {
 	linkedin: 'https://www.linkedin.com/in/jodaz',
 	threads: 'https://www.threads.net/@jodaz_',
 	instagram: 'https://www.instagram.com/jodaz_/',
-	email: 'https://hello@jodaz.dev',
+	email: 'jodaz.business@gmail.com',
 	telegram: 'https://t.me/jodaz1',
     blog: 'https://blog.jodaz.dev/',
     upwork: 'https://www.upwork.com/freelancers/jesusordosgoitty4'
