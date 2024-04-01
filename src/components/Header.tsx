@@ -4,6 +4,7 @@ import { Close, Menu } from "@/constants/icons";
 import { INTERNAL_LINKS } from '@/constants/internal-links';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
+import { useDetectOutsideClick } from '@/hooks/useDetectOutsideClick';
 import NavLink from './NavLink';
 import ToggleLanguageButton from "./ToggleLanguageButton";
 import ToggleThemeButton from "./ToggleThemeButton";
@@ -60,9 +61,14 @@ const DesktopMenu = ({ i18n }) => {
 }
 
 const MobileMenu = ({ i18n }) => {
+    const ref = React.useRef();
     const [isOpen, setIsOpen] = React.useState(false)
 
     const toggleMenu = () => setIsOpen(!isOpen)
+
+    useDetectOutsideClick(ref, () => {
+        setIsOpen(false)
+    });
 
     return (
         <>
@@ -98,8 +104,9 @@ const MobileMenu = ({ i18n }) => {
                     width: '80%',
                     flexDirection: 'column',
                     background: theme => theme.palette.background.default,
-                    borderRight: '1px solid #000'
-                }}>
+                    borderRight: '1px solid #000',
+                    transition: '0.3s'
+                }} ref={ref}>
                     <Stack
                         spacing={1}
                         direction='column'
@@ -162,6 +169,7 @@ export function Header() {
                 zIndex: 1,
                 alignItems: 'center',
                 position: { xs: 'fixed', md: 'relative' },
+                background: theme => theme.palette.background.default,
                 width: '100%'
             }}>
                 <Box display='flex' justifyContent='space-between' alignSelf='center' sx={{

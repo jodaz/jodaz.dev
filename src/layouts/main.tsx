@@ -12,6 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             flexDirection: 'column',
             backgroundColor: theme => theme.palette.background.default,
             height: '100vh',
+            overflowY: 'scroll'
         }}>
             <Header />
             <Box sx={{
