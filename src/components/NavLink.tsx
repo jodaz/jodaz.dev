@@ -30,6 +30,7 @@ const NavLink = ({
                 textDecoration: 'none',
                 textTransform: 'uppercase',
                 fontWeight: 600,
+                padding: { xs: '1rem' },
                 letterSpacing: '1px',
                 fontSize: '0.9rem'
             }}

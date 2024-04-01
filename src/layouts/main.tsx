@@ -6,23 +6,23 @@ import { Footer } from "@/components/Footer"
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
         <Box sx={{
-            background: 'background.default',
+            color: 'text.primary',
+            width: '100%',
             display: 'flex',
             flexDirection: 'column',
-            minHeight: '100vh',
-            height: 'fit-content',
-            color: 'text.primary',
-            backgroundColor: theme => theme.palette.background.default
+            backgroundColor: theme => theme.palette.background.default,
+            height: '100vh',
         }}>
             <Header />
             <Box sx={{
                 display: 'flex',
                 alignSelf: 'center',
-                minHeight: { xs: '84vh', md: '80vh' },
-                width: { xs: '100%', md: '80%' },
+                width: '100%',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                padding: '3rem 2rem'
+                background: 'background.default',
+                backgroundColor: theme => theme.palette.background.default,
+                padding: '100px 10%'
             }}>
                 {children}
             </Box>
