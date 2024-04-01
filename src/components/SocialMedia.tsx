@@ -7,17 +7,18 @@ import {
 import { SOCIAL_LINKS, USERNAMES } from '@/constants/social-links'
 import { Instagram, Threads, IconType, LinkedInIcon } from "@/constants/icons";
 import styled from "@emotion/styled";
+import React from "react";
 
 interface ISocialMedia {
     link: string;
-	icon: IconType;
+	icon: React.ReactNode;
     username: string;
     description: string;
 }
 
 interface ISocialMediaItem {
     item: ISocialMedia;
-    i: number;
+    key: number;
 }
 
 const BoxContainer = styled(Box)(() => ({
@@ -25,9 +26,11 @@ const BoxContainer = styled(Box)(() => ({
     alignItems: 'start'
 }))
 
-const SocialMediaItem = ({ item, i } : ISocialMediaItem) => (
-    <BoxContainer key={i}>
-        {item.icon}
+const SocialMediaItem = ({ item, key } : ISocialMediaItem) => (
+    <BoxContainer key={key}>
+        <>
+            {item.icon}
+        </>
         <Box sx={{ flex: 1 }}>
             <Link sx={{
                 marginLeft: '10px',
@@ -73,7 +76,7 @@ const SocialMedia = () => (
             marginTop: '1rem'
         }}
     >
-        {sociallinks.map((item, i) => <SocialMediaItem item={item} i={i} />)}
+        {sociallinks.map((item, i) => <SocialMediaItem item={item} key={i} />)}
     </Stack>
 )
 

@@ -33,13 +33,13 @@ const Logo = () => (
     </NextLink>
 )
 
-const DesktopMenu = ({ i18n }) => {
+const DesktopMenu = ({ i18n } : { i18n: any }) => {
     const router = useRouter();
 
     const isHomePage = router.pathname === '/';
 
     const renderLinks = () => INTERNAL_LINKS.map((link, i) => (
-        <NavLink route={link.route} i={i} name={i18n(link.page)} />
+        <NavLink route={link.route} key={i} name={i18n(link.page)} />
     ))
 
     return (
@@ -60,9 +60,9 @@ const DesktopMenu = ({ i18n }) => {
     )
 }
 
-const MobileMenu = ({ i18n }) => {
-    const ref = React.useRef();
-    const [isOpen, setIsOpen] = React.useState(false)
+const MobileMenu = ({ i18n } : { i18n : any}) => {
+    const ref = React.useRef<any>(null);
+    const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
     const toggleMenu = () => setIsOpen(!isOpen)
 
@@ -130,7 +130,11 @@ const MobileMenu = ({ i18n }) => {
                             </IconButton>
                         </Stack>
                         {INTERNAL_LINKS.map((link, i) => (
-                            <NavLink route={link.route} i={i} name={i18n(link.page)} />
+                            <NavLink
+                                route={link.route}
+                                key={i}
+                                name={i18n(link.page)}
+                            />
                         ))}
                     </Stack>
                     <Stack

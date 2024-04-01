@@ -17,7 +17,7 @@ const Navigation = () => {
 	return (
         <Stack spacing={2} direction='row'>
             {INTERNAL_LINKS.map((link, i) => (
-                <NavLink route={link.route} i={i} name={t(link.page)} />
+                <NavLink route={link.route} key={i} name={t(link.page)} />
             ))}
         </Stack>
 	)

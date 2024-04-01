@@ -4,13 +4,13 @@ import NextLink from 'next/link';
 
 interface INavLink {
     route: string;
-    i: number;
+    key: number;
     name: string;
 }
 
 const NavLink = ({
     route,
-    i,
+    key,
     name
 } : INavLink) => {
     const [initialRender, setInitialRender] = React.useState(false)
@@ -25,7 +25,7 @@ const NavLink = ({
         <Link
             component={NextLink}
             href={route}
-            key={i}
+            key={key}
             sx={{
                 textDecoration: 'none',
                 textTransform: 'uppercase',
