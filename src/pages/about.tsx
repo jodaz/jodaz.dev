@@ -9,11 +9,14 @@ import { IWorkExperience } from "@/types/models"
 import seo from "next-seo.config"
 import WorkExperience from "@/components/WorkExperience"
 import TechStack from "@/components/TechStack"
+import SocialMedia from "@/components/SocialMedia"
 
 const About = () => {
     const { t } = useTranslation('about')
 
-    const workExperiences: [IWorkExperience] = t('experiences', { returnObjects: true })
+    const workExperiences: [IWorkExperience] = t('experiences', {
+        returnObjects: true
+    })
 
     return (
         <>
@@ -33,7 +36,11 @@ const About = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Stack spacing={2}>
-                            <Typography variant="h3" fontWeight={900} gutterBottom>
+                            <Typography
+                                variant="h3"
+                                fontWeight={900}
+                                gutterBottom
+                            >
                                 {t('page_title')}
                             </Typography>
                             <Typography
@@ -50,13 +57,19 @@ const About = () => {
                 </Grid>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5}>
-                        <Typography variant="h6" fontWeight={900} gutterBottom>
+                        <Typography
+                            variant="h6"
+                            fontWeight={900}
+                            gutterBottom
+                        >
                             {t('works')}
                         </Typography>
                         <Stack spacing={2}>
-                            {workExperiences.map((item: IWorkExperience, i) => (
-                                <WorkExperience key={i} item={item} />
-                            ))}
+                            {workExperiences.map(
+                                (item: IWorkExperience, i) => (
+                                    <WorkExperience key={i} item={item} />
+                                )
+                            )}
                         </Stack>
                     </Grid>
                     <Grid item xs={12} md={7}>
@@ -64,6 +77,13 @@ const About = () => {
                             {t('skills')}
                         </Typography>
                         <TechStack />
+                        <Typography variant="h6" fontWeight={900} gutterBottom>
+                            {t('social_media')}
+                        </Typography>
+                        <Typography fontWeight={400} gutterBottom>
+                            {t('social_media_desc')}
+                        </Typography>
+                        <SocialMedia />
                     </Grid>
                 </Grid>
             </Layout>

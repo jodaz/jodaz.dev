@@ -30,7 +30,7 @@ const theme = (mode: PaletteMode) => createTheme({
         },
 		divider: '#ccc',
 		background: {
-			default: (mode === 'dark') ? '#161B24' : '#EDF0F'
+			default: (mode === 'dark') ? '#161B24' : '#EDF0F0'
 		}
 	},
     components: {
