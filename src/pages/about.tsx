@@ -66,10 +66,10 @@ const About = () => {
                         </Typography>
                         <TechStack />
                         <Typography variant="h6" fontWeight={900} gutterBottom>
-                            Social media
+                            {t('social_media')}
                         </Typography>
                         <Typography fontWeight={400} gutterBottom>
-                            I am pretty active professionally and personally on social media. If you are interested, follow me on the accounts you like.
+                            {t('social_media_desc')}
                         </Typography>
                         <SocialMedia />
                     </Grid>

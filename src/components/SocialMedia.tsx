@@ -22,22 +22,25 @@ interface ISocialMediaItem {
 
 const BoxContainer = styled(Box)(() => ({
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'start'
 }))
 
 const SocialMediaItem = ({ item, i } : ISocialMediaItem) => (
     <BoxContainer key={i}>
         {item.icon}
-        <Link sx={{
-            marginLeft: '10px',
-            cursor: 'pointer',
-            textDecoration: 'none'
-        }} href={item.link} fontWeight={600}>
-            {item.username}
-        </Link>
-        <Typography sx={{ marginLeft: '10px' }} fontWeight={300}>
-            ({item.description})
-        </Typography>
+        <Box sx={{ flex: 1 }}>
+            <Link sx={{
+                marginLeft: '10px',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                marginBottom: 2
+            }} href={item.link} fontWeight={600}>
+                {item.username}
+            </Link>
+            <Typography sx={{ marginLeft: '10px' }} fontWeight={300}>
+                ({item.description})
+            </Typography>
+        </Box>
     </BoxContainer>
 )
 
