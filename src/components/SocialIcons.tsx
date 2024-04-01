@@ -34,7 +34,7 @@ const SocialIcons = () => (
 		direction="row"
 		spacing={2}
 	>
-        <Link href={'mailto:hello@jodaz.dev'} color='text.primary'>
+        <Link href={SOCIAL_LINKS.email} color='text.primary'>
             <EmailIcon size='2rem' />
         </Link>
 		<SocialIcon href={SOCIAL_LINKS.linkedin} CustomIcon={LinkedInIcon} />
