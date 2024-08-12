@@ -3,6 +3,12 @@
     "page_description": "A selection of my best works - Currently building!",
     "projects": [
         {
+            "name": "Horsy.ai",
+            "description": "An AI-driven search engine designed specifically for discovering YouTube podcasters and their content.",
+            "href": "https://horsy.ai",
+            "picture": "/images/projects/horsy.png"
+        },
+        {
             "name": "VanguardDevs",
             "description": "Website template designed for an agency, featuring a map of the location and showcasing the supported services.",
             "href": "https://www.vanguards.dev",

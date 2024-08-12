@@ -3,6 +3,12 @@
     "page_description": "Una selección de mis mejores trabajos  - Página en construcción!",
     "projects": [
         {
+            "name": "Horsy.ai",
+            "description": "Un motor de búsqueda impulsado por IA diseñado específicamente para descubrir podcasters de YouTube y su contenido.",
+            "href": "https://horsy.ai",
+            "picture": "/images/projects/horsy.png"
+        },
+        {
             "name": "VanguardDevs",
             "description": "Plantilla de sitio web diseñada para una agencia, con un mapa de la ubicación y mostrando los servicios admitidos.",
             "href": "https://www.vanguards.dev",
