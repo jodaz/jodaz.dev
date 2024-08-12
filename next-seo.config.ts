@@ -2,7 +2,7 @@
 
 const title = 'Jesus Ordosgoitty'
 const defaultTitle = `${title} - Software Developer`
-const description = "Hi!, my name is Jesus Ordosgoitty, a 98' born guy full-stack software developer from Venezuela venezuelaHi!, my name is Jesus Ordosgoitty, a 98' born guy full-stack software developer from Venezuela"
+const description = "Hi fellow Layer 8 mate!, I am Jesus Ordosgoitty, a 98' born guy full-stack software developer mainly using Node, React and Python."
 const url = 'https://jodaz.dev'
 const ogImageUrl = '/images/og.png'
 const keywords =
