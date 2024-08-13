@@ -4,19 +4,27 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetStaticProps } from 'next'
 import { NextSeo } from 'next-seo'
-import seo from 'next-seo.config'
+import seo, { defaultUrl } from 'next-seo.config'
 import { IProject } from "@/types/models"
 import ProjectCard from "@/components/ProjectCard"
 
 const Projects = () => {
-    const { t } = useTranslation('projects')
+    const { t, i18n } = useTranslation('projects')
     const common = useTranslation('common')
 
     const projectsArr: [IProject] = t('projects', { returnObjects: true })
 
     return (
         <>
-            <NextSeo {...seo} />
+            <NextSeo
+                {...seo}
+                title={`${t('page_title')} - Jesus Ordosgoitty`}
+                openGraph={{
+                    url: `${defaultUrl}${t('page_url')}`,
+                    title: t('page_title'),
+                    locale: i18n.language
+                }}
+            />
             <Layout>
                 <Stack spacing={2}>
                     <Typography variant="h3" fontWeight={900} gutterBottom>

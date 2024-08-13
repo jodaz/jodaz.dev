@@ -6,13 +6,13 @@ import { GetStaticProps } from 'next'
 import { NextSeo } from "next-seo"
 import { Avatar } from "@/components/Avatar"
 import { IWorkExperience } from "@/types/models"
-import seo from "next-seo.config"
+import seo, { defaultUrl } from "next-seo.config"
 import WorkExperience from "@/components/WorkExperience"
 import TechStack from "@/components/TechStack"
 import SocialMedia from "@/components/SocialMedia"
 
 const About = () => {
-    const { t } = useTranslation('about')
+    const { t, i18n } = useTranslation('about')
 
     const workExperiences: [IWorkExperience] = t('experiences', {
         returnObjects: true
@@ -20,7 +20,15 @@ const About = () => {
 
     return (
         <>
-            <NextSeo {...seo} />
+            <NextSeo
+                {...seo}
+                title={`${t('page_title')} - Jesus Ordosgoitty`}
+                openGraph={{
+                    url: `${defaultUrl}${t('page_url')}`,
+                    title: t('page_title'),
+                    locale: i18n.language
+                }}
+            />
             <Layout>
                 <Grid container spacing={2} mb={3}>
                     <Grid

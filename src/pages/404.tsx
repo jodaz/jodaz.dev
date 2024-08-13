@@ -8,11 +8,18 @@ import { NextSeo } from 'next-seo'
 import seo from 'next-seo.config'
 
 const NotFoundPage = () => {
-    const { t } = useTranslation('notfound')
+    const { t, i18n } = useTranslation('notfound')
 
     return (
         <>
-            <NextSeo {...seo} />
+            <NextSeo
+                {...seo}
+                title={`${t('page_title')}`}
+                openGraph={{
+                    title: t('page_title'),
+                    locale: i18n.language
+                }}
+            />
             <Layout>
                 <Stack spacing={2} alignSelf='center'>
                     <Typography variant="subtitle1" fontWeight={900}>
