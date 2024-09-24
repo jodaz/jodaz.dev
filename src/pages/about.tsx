@@ -81,10 +81,10 @@ const About = () => {
                         </Stack>
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <Typography variant="h6" fontWeight={900} gutterBottom>
+                        {/* <Typography variant="h6" fontWeight={900} gutterBottom>
                             {t('skills')}
                         </Typography>
-                        <TechStack />
+                        <TechStack /> */}
                         <Typography variant="h6" fontWeight={900} gutterBottom>
                             {t('social_media')}
                         </Typography>
