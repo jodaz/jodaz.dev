@@ -6,7 +6,11 @@ import {
     React,
     MdBuildCircle,
     Vite,
-    NodeJS
+    NodeJS,
+    ReactHookForm,
+    ReactNative,
+    Docker,
+    Redux
 } from '@/constants/icons';
 
 const skillIcons = {
@@ -17,7 +21,11 @@ const skillIcons = {
     Vite: Vite,
     Express: ExpressJS,
     Postgres: Postgres,
-    "Node.js": NodeJS
+    "Node.js": NodeJS,
+    "React Hook Form": ReactHookForm,
+    "React Native": ReactNative,
+    Docker: Docker,
+    Redux: Redux
 };
 
 export const getSkillIcon = (skill: string) => {

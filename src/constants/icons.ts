@@ -12,7 +12,8 @@ export {
 } from 'react-icons/si'
 
 export {
-    FaCode as Code
+    FaCode as Code,
+    FaDocker as Docker
 } from 'react-icons/fa'
 
 export {

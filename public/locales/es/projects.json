@@ -9,7 +9,7 @@
             "href": "https://horsy.ai",
             "picture": "/images/projects/horsy.png",
             "hidden": true,
-            "skills": ["React", "Next.js", "MUI"]
+            "skills": ["React", "Next.js", "MUI", "Docker", "React Hook Form"]
         },
         {
             "name": "VanguardDevs",
@@ -25,14 +25,14 @@
             "picture": "/images/projects/MiRewards.png",
             "href": "https://mi-rewards.com/",
             "hidden": true,
-            "skills": ["React", "Next.js", "Theme.UI"]
+            "skills": ["React", "Next.js", "Theme.UI", "React Hook Form"]
         },
         {
             "name": "Approbado",
             "description": "Approbado es una aplicación web que ofrece una experiencia de aprendizaje electrónica gamificada basada en preguntas sobre temas relacionados con abogados.",
             "picture": "/images/npm.webp",
             "hidden": true,
-            "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js"]
+            "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js", "Redux"]
         },
         {
             "name": "Circuito1App",
