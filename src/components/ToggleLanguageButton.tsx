@@ -9,6 +9,8 @@ const Button = styled(ToggleButton)(({ theme }) => ({
     fontWeight: 900,
     borderRadius: '8px !important',
     transition: '0.3s',
+    marginRight: '0.25em',
+    padding: '0.6em',
     '&[aria-pressed=true]': {
         // @ts-ignore
         backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.secondary.main, 0.2) : 'primary.main',

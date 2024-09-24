@@ -38,9 +38,10 @@ const SkillItem = styled(Chip)(({ theme }) => ({
 interface IProjectCard {
     item: IProject;
     key: number;
+    t: any
 }
 
-const ProjectCard = ({ item, key } : IProjectCard) => {
+const ProjectCard = ({ item, key, t } : IProjectCard) => {
     const [showMore, setShowMore] = React.useState<boolean>(false);
 
     const handleShowMore = () => {
@@ -54,7 +55,6 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                 spacing={2}
                 sx={{
                     minHeight: '450px',
-                    maxHeight: '450px',
                     mb: 4
                 }}
             >
@@ -91,7 +91,7 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                     spacing={1}
                     flexWrap='wrap'
                     maxWidth={500}
-                    height='80px'
+                    height={{ xs: 'initial', sm: '80px'}}
                 >
                     {item.skills?.slice(0,4).map((skill: string, i) => {
                         const IconComponent = getSkillIcon(skill);
@@ -118,7 +118,7 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                     {(item.skills?.length || 0) > 4 ? (
                         <SkillItem
                             onClick={handleShowMore}
-                            label={showMore ? 'Show Less' : 'Show More'}
+                            label={showMore ? t('less') : t('more')}
                         />
                     ) : null}
                 </Stack>
@@ -126,13 +126,13 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                     {item.github ? (
                         <Item href={item.github} target='_blank'>
                             <Code size='1rem' style={{ marginRight: '10px' }} />
-                            Source
+                            {t('source')}
                         </Item>
                     ) : null}
                     {item.href ? (
                         <Item href={item.href} target='_blank'>
                             <LinkIcon size='1rem' style={{ marginRight: '10px' }} />
-                            Web
+                            {t('web')}
                         </Item>
                     ) : null}
                 </Stack>

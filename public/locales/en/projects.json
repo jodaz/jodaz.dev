@@ -2,6 +2,10 @@
     "page_title": "Projects",
     "page_url": "/projects",
     "page_description": "A selection of my best works - Currently building!",
+    "more": "Show more",
+    "less": "See less",
+    "source": "Source",
+    "web": "Web",
     "projects": [
         {
             "name": "Horsy.ai",

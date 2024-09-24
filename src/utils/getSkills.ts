@@ -1,9 +1,11 @@
+import React from 'react';
+
 import {
     Mui,
     Postgres,
     ExpressJS,
     NextJS,
-    React,
+    React as ReactIcon,
     MdBuildCircle,
     Vite,
     NodeJS,
@@ -13,8 +15,10 @@ import {
     Redux
 } from '@/constants/icons';
 
-const skillIcons = {
-    React: React,
+type SkillIcon = React.FC<{ size?: string }>; // Adjust props as needed
+
+const skillIcons: Record<string, SkillIcon> = {
+    React: ReactIcon,
     "Next.js": NextJS,
     MUI: Mui,
     "Theme.UI": MdBuildCircle,

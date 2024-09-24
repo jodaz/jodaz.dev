@@ -41,7 +41,11 @@ const Projects = () => {
                 >
                     {projectsArr.filter((item: IProject) => item.hidden === true)
                         .map((item: IProject, i) => (
-                            <ProjectCard key={i} item={item} />
+                            <ProjectCard
+                                key={i}
+                                item={item}
+                                t={t}
+                            />
                         ))}
                 </Grid>
             </Layout>

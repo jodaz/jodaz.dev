@@ -2,6 +2,10 @@
     "page_title": "Proyectos",
     "page_url": "/projects",
     "page_description": "Una selección de mis mejores trabajos  - Página en construcción!",
+    "more": "Ver mas",
+    "less": "Ocultar",
+    "source": "Codigo",
+    "web": "Sitio web",
     "projects": [
         {
             "name": "Horsy.ai",
