@@ -15,4 +15,5 @@ export interface IProject {
     href?: string;
     github?: string;
     hidden: boolean;
+    skills?: string[];
 }

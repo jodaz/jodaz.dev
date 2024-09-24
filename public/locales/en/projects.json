@@ -8,7 +8,8 @@
             "description": "An AI-driven search engine designed specifically for discovering YouTube podcasters and their content.",
             "href": "https://horsy.ai",
             "picture": "/images/projects/horsy.png",
-            "hidden": true
+            "hidden": true,
+            "skills": ["React", "Next.js", "MUI"]
         },
         {
             "name": "VanguardDevs",
@@ -19,17 +20,19 @@
             "hidden": false
         },
         {
-            "name": "MiRewards Development Redesign",
+            "name": "MiRewards",
             "description":  "Redesign of a website for an agency (Stampfeet), with a focus on supporting a redemption process for rewards and localization.",
             "picture": "/images/projects/MiRewards.png",
             "href": "https://mi-rewards.com/",
-            "hidden": true
+            "hidden": true,
+            "skills": ["React", "Next.js", "Theme.UI"]
         },
         {
             "name": "Approbado",
             "description": "Approbado web application that offers a gamified e-learning experience based on trivia about subjects related to Lawyers.",
             "picture": "/images/npm.webp",
-            "hidden": true
+            "hidden": true,
+            "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js"]
         },
         {
             "name": "Circuito1App",

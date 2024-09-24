@@ -5,11 +5,14 @@ import {
     Stack,
     styled,
     Grid,
-    Link
+    Link,
+    Chip,
+    Grow
 } from "@mui/material";
 import { IProject } from '@/types/models';
 import Image from 'next/image';
-import { Code, LinkIcon } from '@/constants/icons';
+import { Code, LinkIcon, ReactNative } from '@/constants/icons';
+import { getSkillIcon } from '@/utils/getSkills';
 
 const Item = styled(Link)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,6 +21,7 @@ const Item = styled(Link)(({ theme }) => ({
     textAlign: 'center',
     width: 'fit-content',
     color: theme.palette.text.secondary,
+    fontWeight: 700,
     borderRadius: theme.spacing(1),
     textDecoration: 'none',
     display: 'flex',
@@ -25,12 +29,24 @@ const Item = styled(Link)(({ theme }) => ({
     justifyContent: 'center'
 }));
 
+const SkillItem = styled(Chip)(({ theme }) => ({
+    padding: `${theme.spacing(1)} ${theme.spacing(0.25)}`,
+    borderRadius: theme.spacing(1),
+    marginTop: `${theme.spacing(1)} !important`
+}))
+
 interface IProjectCard {
     item: IProject;
     key: number;
 }
 
 const ProjectCard = ({ item, key } : IProjectCard) => {
+    const [showMore, setShowMore] = React.useState<boolean>(false);
+
+    const handleShowMore = () => {
+        setShowMore(!showMore);
+    };
+
 	return (
         <Grid key={key} item xs={12} md={6} sx={{ mb: 4 }}>
             <Stack
@@ -38,7 +54,8 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                 spacing={2}
                 sx={{
                     minHeight: '450px',
-                    maxHeight: '450px'
+                    maxHeight: '450px',
+                    mb: 4
                 }}
             >
                 <Box sx={{ borderRadius: '6px' }}>
@@ -69,6 +86,42 @@ const ProjectCard = ({ item, key } : IProjectCard) => {
                         {item.description}
                     </Typography>
                 </Box>
+                <Stack
+                    direction="row"
+                    spacing={1}
+                    flexWrap='wrap'
+                    maxWidth={500}
+                    height='80px'
+                >
+                    {item.skills?.slice(0,4).map((skill: string, i) => {
+                        const IconComponent = getSkillIcon(skill);
+
+                        return (
+                            <SkillItem
+                                key={i}
+                                label={skill}
+                                avatar={IconComponent ? <IconComponent size={'0.5em'} /> : <></>}
+                            />
+                        )
+                    })}
+                    {showMore && item.skills?.slice(4).map((skill, i) => {
+                        const IconComponent = getSkillIcon(skill);
+
+                        return (
+                            <SkillItem
+                                key={i + 4} // Ensure unique keys
+                                label={skill}
+                                avatar={IconComponent ? <IconComponent size={'0.5em'} /> : <></>}
+                            />
+                        );
+                    })}
+                    {(item.skills?.length || 0) > 4 ? (
+                        <SkillItem
+                            onClick={handleShowMore}
+                            label={showMore ? 'Show Less' : 'Show More'}
+                        />
+                    ) : null}
+                </Stack>
                 <Stack direction="row" spacing={2}>
                     {item.github ? (
                         <Item href={item.github} target='_blank'>

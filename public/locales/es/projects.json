@@ -8,7 +8,8 @@
             "description": "Un motor de búsqueda impulsado por IA diseñado específicamente para descubrir podcasters de YouTube y su contenido.",
             "href": "https://horsy.ai",
             "picture": "/images/projects/horsy.png",
-            "hidden": true
+            "hidden": true,
+            "skills": ["React", "Next.js", "MUI"]
         },
         {
             "name": "VanguardDevs",
@@ -23,13 +24,15 @@
             "description": "Rediseño de un sitio web para una agencia (Stampfeet), con un enfoque en apoyar un proceso de redención de recompensas y localización.",
             "picture": "/images/projects/MiRewards.png",
             "href": "https://mi-rewards.com/",
-            "hidden": true
+            "hidden": true,
+            "skills": ["React", "Next.js", "Theme.UI"]
         },
         {
             "name": "Approbado",
             "description": "Approbado es una aplicación web que ofrece una experiencia de aprendizaje electrónica gamificada basada en preguntas sobre temas relacionados con abogados.",
             "picture": "/images/npm.webp",
-            "hidden": true
+            "hidden": true,
+            "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js"]
         },
         {
             "name": "Circuito1App",

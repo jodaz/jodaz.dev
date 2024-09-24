@@ -7,7 +7,8 @@ export {
     SiStyledcomponents as StyledComponents,
     SiTailwindcss as TailwindCSS,
     SiGithubactions as GithubActions,
-    SiDigitalocean as DigitalOcean
+    SiDigitalocean as DigitalOcean,
+    SiVite as Vite
 } from 'react-icons/si'
 
 export {
@@ -34,7 +35,9 @@ export {
     BiLogoTypescript as Typescript,
     BiLogoReact as React,
     BiLogoPhp as PHP,
-    BiLink as LinkIcon
+    BiLink as LinkIcon,
+    BiLogoNodejs as NodeJS,
+    BiLogoRedux as Redux
 } from 'react-icons/bi'
 
 export {
@@ -48,7 +51,8 @@ export {
 export {
     MdOutlineEmail as EmailIcon,
     MdMenu as Menu,
-    MdClose as Close
+    MdClose as Close,
+    MdBuildCircle as MdBuildCircle
 } from "react-icons/md";
 
 export {
