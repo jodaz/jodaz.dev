@@ -7,61 +7,71 @@
             "name": "Horsy.ai",
             "description": "An AI-driven search engine designed specifically for discovering YouTube podcasters and their content.",
             "href": "https://horsy.ai",
-            "picture": "/images/projects/horsy.png"
+            "picture": "/images/projects/horsy.png",
+            "hidden": true
         },
         {
             "name": "VanguardDevs",
             "description": "Website template designed for an agency, featuring a map of the location and showcasing the supported services.",
             "href": "https://www.vanguards.dev",
             "github": "https://github.com/VanguardDevs/vanguards.dev",
-            "picture": "/images/projects/VanguardDevs.png"
+            "picture": "/images/projects/VanguardDevs.png",
+            "hidden": false
         },
         {
             "name": "MiRewards Development Redesign",
             "description":  "Redesign of a website for an agency (Stampfeet), with a focus on supporting a redemption process for rewards and localization.",
             "picture": "/images/projects/MiRewards.png",
-            "href": "https://mi-rewards.com/"
+            "href": "https://mi-rewards.com/",
+            "hidden": true
         },
         {
             "name": "Approbado",
-            "description": "Approbado  web application that offers a gamified e-learning experience based on trivia about subjects related to Lawyers.",
-            "picture": "/images/npm.webp"
+            "description": "Approbado web application that offers a gamified e-learning experience based on trivia about subjects related to Lawyers.",
+            "picture": "/images/npm.webp",
+            "hidden": true
         },
         {
             "name": "Circuito1App",
             "description": "C1A (CircuitoUnoApp) is a web application built as a PWA, which goal is to record and track the flow of voters in five local governments of the Sucre State during the venezuelan parlamentary elections (2020).",
             "picture": "/images/npm.webp",
             "github": "https://github.com/jodaz/votes",
-            "href": "https://votes.jodaz.dev"
+            "href": "https://votes.jodaz.dev",
+            "hidden": false
         },
         {
             "name": "SAI Frontend",
             "description": "SAI is a web application designed to streamline and enhance the management of social care services. It provides statistics and charts of attendances for informed decision-making and resource allocation.",
             "github": "https://github.com/jodaz/sai-frontend",
-            "picture": "/images/npm.webp"
+            "picture": "/images/npm.webp",
+            "hidden": false
         },
         {
             "name": "Sauco",
             "description": "SAUCO is a CRM platform tailored for tax collection and management.",
             "github": "https://github.com/VanguardDevs/sauco",
-            "picture": "/images/npm.webp"
+            "picture": "/images/npm.webp",
+            "hidden": false
         },
         {
             "name": "TinderDogs Frontend",
             "description": "TinderDogs was an unique application inspired by the functionality of Tinder. Designed to connect pet lovers and local pet businesses, this platform offers a variety of features to enhance the pet ownership experience.",
-            "picture": "/images/npm.webp"
+            "picture": "/images/npm.webp",
+            "hidden": false
         },
         {
             "name": "Perrfecto Frontend",
             "description": "Perrfecto is an Instagram inspired social media application that celebrates the love for dogs and pets. Includes features like a photo editor, real-time chat, and a friends following system.",
-            "picture": "/images/npm.webp"
+            "picture": "/images/npm.webp",
+            "hidden": false
         },
         {
             "name": "Markdown Previewer",
             "description": "A simple mardown converter-visualizer app made for freeCodeCamp's Front-end development certification.",
             "picture": "/images/projects/MarkdownPreviewer.png",
             "github": "https://github.com/jodaz/markdown-previewer",
-            "href": "https://jodaz.github.io/markdown-previewer/"
+            "href": "https://jodaz.github.io/markdown-previewer/",
+            "hidden": false
         }
     ]
 }

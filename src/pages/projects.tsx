@@ -39,9 +39,10 @@ const Projects = () => {
                     textAlign='center'
                     mt={6}
                 >
-                    {projectsArr.map((item: IProject, i) => (
-                        <ProjectCard key={i} item={item} />
-                    ))}
+                    {projectsArr.filter((item: IProject) => item.hidden === true)
+                        .map((item: IProject, i) => (
+                            <ProjectCard key={i} item={item} />
+                        ))}
                 </Grid>
             </Layout>
         </>

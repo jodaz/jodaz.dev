@@ -14,4 +14,5 @@ export interface IProject {
     picture: string;
     href?: string;
     github?: string;
+    hidden: boolean;
 }
