@@ -16,8 +16,8 @@ export const Footer: React.FC = () => {
         <Box textAlign='center' component='footer' sx={{
             minHeight: { xs: '8vh', md: '10vh' },
             position: 'relative',
-            background: 'background.default',
             backgroundColor: theme => theme.palette.background.default,
+            paddingTop: '1rem'
         }}>
             <Typography color='text.primary' variant="subtitle2">
                 {t('footer.intro')}

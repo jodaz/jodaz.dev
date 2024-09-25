@@ -45,7 +45,10 @@ const Cover = () => {
                 <Navigation />
 			</Stack>
 			<Box p={2}>
-				<Avatar />
+				<Avatar style={{
+                        border: '3px solid #0b5ef3',
+                        borderRadius: '50%'
+                }} />
 			</Box>
 		</Box>
 	)

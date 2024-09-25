@@ -13,7 +13,13 @@ import NextLink from 'next/link';
 
 const Logo = () => (
     <NextLink href='/'>
-        <Stack ml={1} alignSelf='center' direction='row' alignItems='center' spacing={2}>
+        <Stack
+            ml={4}
+            alignSelf='center'
+            direction='row'
+            alignItems='center'
+            spacing={2}
+        >
             <Image
                 src={'/android-chrome-512x512.png'}
                 alt="Logo"
@@ -50,7 +56,8 @@ const DesktopMenu = ({ i18n } : { i18n: any }) => {
                 flex: 1,
                 alignItems: 'center',
                 justifyContent: 'end',
-                height: '100%'
+                height: '100%',
+                pr: 4
             }}
         >
             {!isHomePage ? renderLinks() : null}

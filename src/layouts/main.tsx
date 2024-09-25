@@ -20,7 +20,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 width: '100%',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                background: 'background.default',
                 backgroundColor: theme => theme.palette.background.default,
                 padding: '100px 10%'
             }}>
