@@ -9,7 +9,6 @@ interface IAvatar extends AvatarProps {
    height?: number;
    width?: number;
    style?: any;
-   src?: string;
 }
 
 export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, src, ...rest }) => {
@@ -21,6 +20,7 @@ export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, src, ...re
             ...sx
 		}} {...rest}>
 			<Image
+                //@ts-ignore
 				src={src}
 				alt="avatar"
 				width={width}

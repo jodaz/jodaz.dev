@@ -6,13 +6,12 @@ import {
     styled,
     Grid,
     Link,
-    Chip,
-    Grow
+    Chip
 } from "@mui/material";
 import { IProject } from '@/types/models';
+import { Code, LinkIcon } from '@/constants/icons';
+import { SkillChip } from './SkillChip';
 import Image from 'next/image';
-import { Code, LinkIcon, ReactNative } from '@/constants/icons';
-import { getSkillIcon } from '@/utils/getSkills';
 
 const Item = styled(Link)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -93,28 +92,18 @@ const ProjectCard = ({ item, key, t } : IProjectCard) => {
                     maxWidth={500}
                     height={{ xs: 'initial', sm: '80px'}}
                 >
-                    {item.skills?.slice(0,4).map((skill: string, i) => {
-                        const IconComponent = getSkillIcon(skill);
-
-                        return (
-                            <SkillItem
-                                key={i}
-                                label={skill}
-                                avatar={IconComponent ? <IconComponent size={'0.5em'} /> : <></>}
-                            />
-                        )
-                    })}
-                    {showMore && item.skills?.slice(4).map((skill, i) => {
-                        const IconComponent = getSkillIcon(skill);
-
-                        return (
-                            <SkillItem
-                                key={i + 4} // Ensure unique keys
-                                label={skill}
-                                avatar={IconComponent ? <IconComponent size={'0.5em'} /> : <></>}
-                            />
-                        );
-                    })}
+                    {item.skills?.slice(0,4).map((skill: string, i) => (
+                        <SkillChip
+                            key={i}
+                            name={skill}
+                        />
+                    ))}
+                    {showMore && item.skills?.slice(4).map((skill, i) => (
+                        <SkillChip
+                            key={i + 4} // Ensure unique keys
+                            name={skill}
+                        />
+                    ))}
                     {(item.skills?.length || 0) > 4 ? (
                         <SkillItem
                             onClick={handleShowMore}
