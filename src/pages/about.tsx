@@ -35,11 +35,17 @@ const About = () => {
                         item xs={12} md={5}
                         display='flex'
                         justifyContent={{ xs: 'center', md: 'start' }}
+                        sx={{
+                            paddingLeft: '5% !important'
+                        }}
                     >
                         <Avatar
-                            style={{ borderRadius: '12px' }}
-                            height={300}
-                            width={300}
+                            style={{
+                                border: '3px solid #0b5ef3',
+                                borderRadius: '50%'
+                            }}
+                            height={250}
+                            width={250}
                         />
                     </Grid>
                     <Grid item xs={12} md={7}>

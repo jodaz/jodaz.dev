@@ -8,10 +8,11 @@ import {
 interface IAvatar extends AvatarProps {
    height?: number;
    width?: number;
-   style?: any
+   style?: any;
+   src?: string;
 }
 
-export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, ...rest }) => {
+export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, src, ...rest }) => {
 	return (
 		<Box sx={{
 			width: 'fit-content',
@@ -20,7 +21,7 @@ export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, ...rest })
             ...sx
 		}} {...rest}>
 			<Image
-				src="/images/avatar.jpeg"
+				src={src}
 				alt="avatar"
 				width={width}
 				height={height}
@@ -34,5 +35,6 @@ export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, ...rest })
 
 Avatar.defaultProps = {
     height: 200,
-    width: 200
+    width: 200,
+    src: '/images/Profile.jpg'
 }
