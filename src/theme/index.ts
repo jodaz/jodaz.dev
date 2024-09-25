@@ -1,6 +1,7 @@
 import "@fontsource/poppins"
 import { createTheme, alpha } from '@mui/material/styles';
 import { PaletteMode } from '@mui/material';
+import { scrollbarStyles } from "./scrollbar";
 
 const theme = (mode: PaletteMode) => createTheme({
     typography: {
@@ -144,6 +145,11 @@ const theme = (mode: PaletteMode) => createTheme({
 						color: `${alpha(theme.palette.info.light, 0.8)}`
 					}
                 })
+            }
+        },
+        MuiCssBaseline: {
+            styleOverrides: {
+                ...scrollbarStyles(mode)
             }
         }
     }

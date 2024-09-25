@@ -1,7 +1,7 @@
 import * as React from 'react'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from '@mui/material'
+import { CssBaseline, ThemeProvider } from '@mui/material'
 import { ColorModeContext } from '@/providers/ToggleThemeProvider'
 import theme from '@/theme'
 import { getTheme } from '@/utils/getTheme'
@@ -21,6 +21,7 @@ function App({ Component, pageProps }: AppProps) {
 	return (
 		<ColorModeContext.Provider value={colorMode}>
 			<ThemeProvider theme={theme(mode)}>
+                <CssBaseline />
                 <NextTopLoader
                     color="#0b5ef3"
                     initialPosition={0.08}
