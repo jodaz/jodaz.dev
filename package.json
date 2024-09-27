@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.21.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fontsource/poppins": "^5.1.0",
@@ -23,6 +25,7 @@
     "framer-motion": "^11.8.0",
     "i18next": "^23.15.1",
     "next": "^14.2.13",
+    "next-cloudinary": "^6.13.0",
     "next-i18next": "^15.3.1",
     "next-seo": "^6.6.0",
     "nextjs-toploader": "^3.6.15",

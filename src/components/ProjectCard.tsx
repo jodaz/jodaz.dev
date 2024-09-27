@@ -11,7 +11,7 @@ import {
 import { IProject } from '@/types/models';
 import { Code, LinkIcon } from '@/constants/icons';
 import { SkillChip } from './SkillChip';
-import Image from 'next/image';
+import { Image } from './Image';
 
 const Item = styled(Link)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -61,11 +61,9 @@ const ProjectCard = ({ item, key, t } : IProjectCard) => {
                     <Image
                         src={item.picture}
                         alt="project"
-                        width="300"
-                        height='200'
-                        style={{
-                            borderRadius: 8
-                        }}
+                        width={300}
+                        height={200}
+                        useNextImageInDevelopment
                     />
                 </Box>
                 <Box sx={{
