@@ -8,15 +8,14 @@ import { Avatar } from "@/components/Avatar"
 import { IWorkExperience } from "@/types/models"
 import seo, { defaultUrl } from "next-seo.config"
 import WorkExperience from "@/components/WorkExperience"
-import TechStack from "@/components/TechStack"
 import SocialMedia from "@/components/SocialMedia"
 
 const About = () => {
     const { t, i18n } = useTranslation('about')
 
-    const workExperiences: [IWorkExperience] = t('experiences', {
+    const workExperiences = t('experiences', {
         returnObjects: true
-    })
+    }) as IWorkExperience[];
 
     return (
         <>

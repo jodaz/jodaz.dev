@@ -12,7 +12,7 @@ const Projects = () => {
     const { t, i18n } = useTranslation('projects')
     const common = useTranslation('common')
 
-    const projectsArr: [IProject] = t('projects', { returnObjects: true })
+    const projectsArr = t('projects', { returnObjects: true }) as [IProject];
 
     return (
         <>
