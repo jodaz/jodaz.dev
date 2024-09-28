@@ -6,7 +6,6 @@ import {
 import { cloudinaryImageUrl } from '@/utils/cloudinary';
 import {
     AdvancedImage,
-	accessibility,
 	placeholder as cldPlaceholder,
 	lazyload,
 	responsive
@@ -27,9 +26,9 @@ export const Image: React.FC<IAvatar> = ({
     useNextImageInDevelopment
 }) => {
 	const shouldRenderNextImage =
-		process.env.NODE_ENV === 'development' && Boolean(useNextImageInDevelopment)
-
-    if (!shouldRenderNextImage) {
+		process.env.NODE_ENV === 'development' || Boolean(useNextImageInDevelopment)
+    console.log(shouldRenderNextImage)
+    if (shouldRenderNextImage) {
         return (
             <NextImage
                 //@ts-ignore
@@ -37,8 +36,6 @@ export const Image: React.FC<IAvatar> = ({
                 alt="avatar"
                 width={width}
                 height={height}
-                blurDataURL='/images/blurred-image.jpg'
-                placeholder="blur"
                 style={style}
             />
         )
@@ -53,14 +50,21 @@ export const Image: React.FC<IAvatar> = ({
 
 		plugins.push(cldPlaceholder({ mode: 'blur' }))
 
-		plugins.push(accessibility())
-
 		plugins.push(responsive({ steps: [600, 800, 1000, 1400] }))
 
 		return plugins
 	}, [])
 
 	return (
-        <AdvancedImage plugins={plugins} cldImg={cloudinaryImageUrl(src)}/>
+        <AdvancedImage
+            plugins={plugins}
+            //@ts-ignore
+            cldImg={cloudinaryImageUrl(src)}
+            style={{
+                height: height,
+                width: width,
+                ...style
+            }}
+        />
 	)
 }

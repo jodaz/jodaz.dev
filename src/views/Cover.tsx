@@ -46,8 +46,8 @@ const Cover = () => {
 			</Stack>
 			<Box p={2}>
 				<Avatar style={{
-                        border: '3px solid #0b5ef3',
-                        borderRadius: '50%'
+                    border: '3px solid #0b5ef3',
+                    borderRadius: '50%'
                 }} />
 			</Box>
 		</Box>

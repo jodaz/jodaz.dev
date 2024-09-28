@@ -16,7 +16,7 @@ export const Avatar: React.FC<IAvatar> = ({
     height = 200,
     width = 200,
     style,
-    src = '/images/Profile.jpg',
+    src = '/images/pic.jpg',
     ...rest
 }) => {
 	return (
@@ -33,6 +33,7 @@ export const Avatar: React.FC<IAvatar> = ({
 				width={width}
 				height={height}
                 style={style}
+                useNextImageInDevelopment
 			/>
 		</Box>
 	)

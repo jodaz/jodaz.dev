@@ -63,7 +63,6 @@ const ProjectCard = ({ item, key, t } : IProjectCard) => {
                         alt="project"
                         width={300}
                         height={200}
-                        useNextImageInDevelopment
                     />
                 </Box>
                 <Box sx={{
