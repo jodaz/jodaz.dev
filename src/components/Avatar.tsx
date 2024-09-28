@@ -33,7 +33,6 @@ export const Avatar: React.FC<IAvatar> = ({
 				width={width}
 				height={height}
                 style={style}
-                useNextImageInDevelopment
 			/>
 		</Box>
 	)
