@@ -27,7 +27,7 @@ export const Image: React.FC<IAvatar> = ({
 }) => {
 	const shouldRenderNextImage =
 		process.env.NODE_ENV === 'development' || Boolean(useNextImageInDevelopment)
-    console.log(shouldRenderNextImage)
+
     if (shouldRenderNextImage) {
         return (
             <NextImage
