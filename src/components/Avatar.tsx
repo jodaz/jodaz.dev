@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Image from 'next/image'
+import { Image } from './Image';
 import {
 	Box,
     AvatarProps
@@ -11,7 +11,14 @@ interface IAvatar extends AvatarProps {
    style?: any;
 }
 
-export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, src, ...rest }) => {
+export const Avatar: React.FC<IAvatar> = ({
+    sx,
+    height = 200,
+    width = 200,
+    style,
+    src = '/images/pic.jpg',
+    ...rest
+}) => {
 	return (
 		<Box sx={{
 			width: 'fit-content',
@@ -25,16 +32,9 @@ export const Avatar: React.FC<IAvatar> = ({ sx, height, width, style, src, ...re
 				alt="avatar"
 				width={width}
 				height={height}
-				blurDataURL='/images/blurred-image.jpg'
-				placeholder="blur"
                 style={style}
+                useNextImageInDevelopment
 			/>
 		</Box>
 	)
-}
-
-Avatar.defaultProps = {
-    height: 200,
-    width: 200,
-    src: '/images/Profile.jpg'
 }
