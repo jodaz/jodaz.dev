@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { ColorModeContext } from '@/providers/ToggleThemeProvider'
 import theme from '@/theme'
-import { getTheme } from '@/utils/getTheme'
+import { getTheme, setTheme } from '@/utils/getTheme'
 import { appWithTranslation } from 'next-i18next';
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import NextTopLoader from 'nextjs-toploader';
@@ -14,7 +14,12 @@ function App({ Component, pageProps }: AppProps) {
 
 	const colorMode = React.useMemo(() => ({
 		toggleColorMode: () => {
-		  	setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+            setMode((prevMode) => {
+                const newMode = prevMode === 'light' ? 'dark' : 'light';
+
+                setTheme(newMode);
+                return newMode;
+            });
 		},
 	}), []);
 
