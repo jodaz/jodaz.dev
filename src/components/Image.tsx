@@ -42,9 +42,9 @@ export const Image: React.FC<IAvatar> = ({
     }
 
 	const plugins = React.useMemo(() => {
-		if (!shouldRenderNextImage) return []
+		if (shouldRenderNextImage) return []
 
-		const plugins = []
+        const plugins = []
 
 		plugins.push(lazyload({ rootMargin: '10px 20px 10px 30px', threshold: 0.1 }))
 
