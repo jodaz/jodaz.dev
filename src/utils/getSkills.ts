@@ -12,7 +12,11 @@ import {
     ReactHookForm,
     ReactNative,
     Docker,
-    Redux
+    Redux,
+    PHP,
+    Nginx,
+    Laravel,
+    jQuery
 } from '@/constants/icons';
 
 type SkillIcon = React.FC<{ size?: string }>; // Adjust props as needed
@@ -29,7 +33,11 @@ const skillIcons: Record<string, SkillIcon> = {
     "React Hook Form": ReactHookForm,
     "React Native": ReactNative,
     Docker: Docker,
-    Redux: Redux
+    Redux: Redux,
+    PHP: PHP,
+    Nginx: Nginx,
+    Laravel: Laravel,
+    jQuery: jQuery
 };
 
 export const getSkillIcon = (skill: string) => {

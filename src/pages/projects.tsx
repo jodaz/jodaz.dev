@@ -39,7 +39,7 @@ const Projects = () => {
                     textAlign='center'
                     mt={6}
                 >
-                    {projectsArr.filter((item: IProject) => item.hidden === true)
+                    {projectsArr.filter((item: IProject) => item.hidden === false)
                         .map((item: IProject, i) => (
                             <ProjectCard
                                 key={i}

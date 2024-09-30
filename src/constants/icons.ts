@@ -8,7 +8,9 @@ export {
     SiTailwindcss as TailwindCSS,
     SiGithubactions as GithubActions,
     SiDigitalocean as DigitalOcean,
-    SiVite as Vite
+    SiVite as Vite,
+    SiNginx as Nginx,
+    SiJquery as jQuery
 } from 'react-icons/si'
 
 export {
@@ -59,5 +61,9 @@ export {
 export {
     FaLinkedinIn as LinkedInIcon
 } from 'react-icons/fa'
+
+export {
+    IoLogoJavascript as Javascript
+} from "react-icons/io";
 
 export type { IconType } from 'react-icons'

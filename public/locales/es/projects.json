@@ -12,7 +12,7 @@
             "description": "Un motor de búsqueda impulsado por IA diseñado específicamente para descubrir podcasters de YouTube y su contenido.",
             "href": "https://horsy.ai",
             "picture": "/images/projects/horsy.png",
-            "hidden": true,
+            "hidden": false,
             "skills": ["React", "Next.js", "MUI", "Docker", "React Hook Form"]
         },
         {
@@ -21,22 +21,23 @@
             "href": "https://www.vanguards.dev",
             "github": "https://github.com/VanguardDevs/vanguards.dev",
             "picture": "/images/projects/VanguardDevs.png",
-            "hidden": false
+            "hidden": true
         },
         {
             "name": "MiRewards",
             "description": "Rediseño de un sitio web para una agencia (Stampfeet), con un enfoque en apoyar un proceso de redención de recompensas y localización.",
             "picture": "/images/projects/MiRewards.png",
             "href": "https://mi-rewards.com/",
-            "hidden": true,
+            "hidden": false,
             "skills": ["React", "Next.js", "Theme.UI", "React Hook Form"]
         },
         {
             "name": "Approbado",
             "description": "Approbado es una aplicación web que ofrece una experiencia de aprendizaje electrónica gamificada basada en preguntas sobre temas relacionados con abogados.",
-            "picture": "/images/npm.webp",
-            "hidden": true,
-            "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js", "Redux"]
+            "picture": "/images/projects/approbado.png",
+            "hidden": false,
+            "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js", "Redux"],
+            "github": "https://github.com/jodaz/approbado"
         },
         {
             "name": "Circuito1App",
@@ -44,33 +45,34 @@
             "picture": "/images/npm.webp",
             "github": "https://github.com/jodaz/votes",
             "href": "https://votes.jodaz.dev",
-            "hidden": false
+            "hidden": true
         },
         {
             "name": "SAI Frontend",
             "description": "SAI es una aplicación web diseñada para optimizar y mejorar la gestión de servicios de atención social. Proporciona estadísticas y gráficos de asistencias para la toma de decisiones informadas y la asignación de recursos.",
             "github": "https://github.com/jodaz/sai-frontend",
             "picture": "/images/npm.webp",
-            "hidden": false
+            "hidden": true
         },
         {
             "name": "Sauco",
             "description": "SAUCO es una plataforma CRM diseñada para la recolección y gestión de impuestos.",
             "github": "https://github.com/VanguardDevs/sauco",
-            "picture": "/images/npm.webp",
-            "hidden": false
+            "picture": "/images/projects/sauco_logo.png",
+            "hidden": false,
+            "skills": ["Laravel", "jQuery", "Postgres", "React", "PHP", "Nginx"]
         },
         {
             "name": "TinderDogs Frontend",
             "description": "TinderDogs fue una aplicación única inspirada en la funcionalidad de Tinder. Diseñada para conectar amantes de mascotas y negocios locales de mascotas, esta plataforma ofrece una variedad de funciones para mejorar la experiencia de propiedad de mascotas.",
             "picture": "/images/npm.webp",
-            "hidden": false
+            "hidden": true
         },
         {
             "name": "Perrfecto Frontend",
             "description": "Perrfecto es una aplicación de redes sociales inspirada en Instagram que celebra el amor por los perros y las mascotas. Incluye funciones como un editor de fotos, chat en tiempo real y un sistema de seguimiento de amigos.",
             "picture": "/images/npm.webp",
-            "hidden": false
+            "hidden": true
         },
         {
             "name": "Markdown Previewer",
@@ -78,7 +80,7 @@
             "picture": "/images/projects/MarkdownPreviewer.png",
             "github": "https://github.com/jodaz/markdown-previewer",
             "href": "https://jodaz.github.io/markdown-previewer/",
-            "hidden": false
+            "hidden": true
         }
     ]
 }
