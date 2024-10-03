@@ -32,11 +32,12 @@
             "skills": ["React", "Next.js", "Theme.UI", "React Hook Form"]
         },
         {
-            "name": "Approbado",
+            "name": "Approbado Admin",
             "description": "Approbado web application that offers a gamified e-learning experience based on trivia about subjects related to Lawyers.",
             "picture": "/images/projects/approbado.png",
             "hidden": false,
             "skills": ["React", "Vite", "MUI", "Express", "Postgres", "Node.js", "Redux"],
+            "href": "https://www.admin.approbado.jodaz.dev",
             "github": "https://github.com/jodaz/approbado"
         },
         {
