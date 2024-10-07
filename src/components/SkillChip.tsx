@@ -9,7 +9,7 @@ import { JumpAnimation } from '@/utils/animations';
 const SkillItem = styled(Chip)(({ theme }) => ({
     padding: `${theme.spacing(1)} ${theme.spacing(0.25)}`,
     borderRadius: theme.spacing(1),
-    marginTop: `${theme.spacing(1)} !important`
+    marginTop: `${theme.spacing(1)} !important`,
 }))
 
 interface ISkillChip {

@@ -5,13 +5,12 @@ import {
     Stack,
     styled,
     Grid,
-    Link,
-    Chip
+    Link
 } from "@mui/material";
 import { IProject } from '@/types/models';
 import { Code, LinkIcon } from '@/constants/icons';
-import { SkillChip } from './SkillChip';
 import { Image } from './Image';
+import { SkillStack } from './SkillStack';
 
 const Item = styled(Link)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -28,25 +27,7 @@ const Item = styled(Link)(({ theme }) => ({
     justifyContent: 'center'
 }));
 
-const SkillItem = styled(Chip)(({ theme }) => ({
-    padding: `${theme.spacing(1)} ${theme.spacing(0.25)}`,
-    borderRadius: theme.spacing(1),
-    marginTop: `${theme.spacing(1)} !important`
-}))
-
-interface IProjectCard {
-    item: IProject;
-    key: number;
-    t: any
-}
-
-const ProjectCard = ({ item, key, t } : IProjectCard) => {
-    const [showMore, setShowMore] = React.useState<boolean>(false);
-
-    const handleShowMore = () => {
-        setShowMore(!showMore);
-    };
-
+const ProjectCard = ({ item, key, t } : { item: IProject; key: number; t: any }) => {
 	return (
         <Grid key={key} item xs={12} md={6} sx={{ mb: 4 }}>
             <Stack
@@ -82,32 +63,7 @@ const ProjectCard = ({ item, key, t } : IProjectCard) => {
                         {item.description}
                     </Typography>
                 </Box>
-                <Stack
-                    direction="row"
-                    spacing={1}
-                    flexWrap='wrap'
-                    maxWidth={500}
-                    height={{ xs: 'initial', sm: '80px'}}
-                >
-                    {item.skills?.slice(0,4).map((skill: string, i) => (
-                        <SkillChip
-                            key={i}
-                            name={skill}
-                        />
-                    ))}
-                    {showMore && item.skills?.slice(4).map((skill, i) => (
-                        <SkillChip
-                            key={i + 4} // Ensure unique keys
-                            name={skill}
-                        />
-                    ))}
-                    {(item.skills?.length || 0) > 4 ? (
-                        <SkillItem
-                            onClick={handleShowMore}
-                            label={showMore ? t('less') : t('more')}
-                        />
-                    ) : null}
-                </Stack>
+                <SkillStack item={item} t={t} />
                 <Stack direction="row" spacing={2}>
                     {item.github ? (
                         <Item href={item.github} target='_blank'>
