@@ -1,5 +1,5 @@
 import Layout from "@/layouts/main"
-import { Stack, Grid, Typography } from "@mui/material"
+import { Stack, Grid, Typography, Box, useMediaQuery, Theme } from "@mui/material"
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { GetStaticProps } from 'next'
@@ -9,8 +9,10 @@ import { IWorkExperience } from "@/types/models"
 import seo, { defaultUrl } from "next-seo.config"
 import WorkExperience from "@/components/WorkExperience"
 import SocialMedia from "@/components/SocialMedia"
+import { Available } from "@/components/Available"
 
 const About = () => {
+    const isSmall = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'))
     const { t, i18n } = useTranslation('about')
 
     const workExperiences = t('experiences', {
@@ -29,23 +31,35 @@ const About = () => {
                 }}
             />
             <Layout>
+                <Box
+                    display={{ xs: 'none', md: 'flex'}}
+                    justifyContent='flex-end'
+                    flex={1}
+                    marginRight='3rem'
+                >
+                    <Available />
+                </Box>
                 <Grid container spacing={2} mb={3}>
                     <Grid
                         item xs={12} md={5}
                         display='flex'
-                        justifyContent={{ xs: 'center', md: 'start' }}
+                        justifyContent={{ xs: 'center', sm: 'center', md: 'start' }}
                         sx={{
-                            paddingLeft: '5% !important'
+                            paddingLeft: '5% !important',
+                            flexDirection: { xs: 'column', md: 'row' },
+                            alignItems: 'center'
                         }}
                     >
                         <Avatar
                             style={{
                                 border: '3px solid #0b5ef3',
-                                borderRadius: '50%'
+                                borderRadius: '50%',
+                                marginBottom: '25px'
                             }}
                             height={250}
                             width={250}
                         />
+                        {isSmall ? <Available /> : null}
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Stack spacing={2}>

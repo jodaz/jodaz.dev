@@ -27,7 +27,10 @@ const theme = (mode: PaletteMode) => createTheme({
 		},
         info: {
             main: '#1C4C96',
-            light: '#0b5ef3'
+            light: '#0b5ef3',
+        },
+        error: {
+            main: '#FF0000'
         },
 		divider: '#ccc',
 		background: {

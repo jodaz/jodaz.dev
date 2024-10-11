@@ -4,6 +4,7 @@ import { Avatar } from '@/components/Avatar'
 import { useTranslation } from 'next-i18next';
 import SocialIcons from '@/components/SocialIcons';
 import Navigation from '@/components/Navigation';
+import { Available } from '@/components/Available';
 
 const Name = styled(Typography)(({ theme }) => ({
     fontWeight: 700,
@@ -44,12 +45,18 @@ const Cover = () => {
 				<SocialIcons />
                 <Navigation />
 			</Stack>
-			<Box p={2}>
+			<Stack
+                direction='column'
+                spacing={2}
+                alignItems='center'
+                p={2}
+            >
 				<Avatar style={{
                     border: '3px solid #0b5ef3',
                     borderRadius: '50%'
                 }} />
-			</Box>
+                    <Available />
+			</Stack>
 		</Box>
 	)
 }
