@@ -8,6 +8,8 @@ import { getTheme, setTheme } from '@/utils/getTheme'
 import { appWithTranslation } from 'next-i18next';
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import NextTopLoader from 'nextjs-toploader';
+import { ApolloProvider } from '@apollo/client'
+import { apolloClient } from '@/utils/apollo-client'
 
 function App({ Component, pageProps }: AppProps) {
 	const [mode, setMode] = React.useState<'light' | 'dark'>(getTheme());
@@ -24,19 +26,21 @@ function App({ Component, pageProps }: AppProps) {
 	}), []);
 
 	return (
-		<ColorModeContext.Provider value={colorMode}>
-			<ThemeProvider theme={theme(mode)}>
-                <CssBaseline />
-                <NextTopLoader
-                    color="#0b5ef3"
-                    initialPosition={0.08}
-                    showSpinner={false}
-                    shadow="0 0 10px #2299DD,0 0 5px #2299DD"
-                />
-                <GoogleAnalytics />
-				<Component {...pageProps} />
-			</ThemeProvider>
-		</ColorModeContext.Provider>
+        <ApolloProvider client={apolloClient}>
+            <ColorModeContext.Provider value={colorMode}>
+                <ThemeProvider theme={theme(mode)}>
+                    <CssBaseline />
+                    <NextTopLoader
+                        color="#0b5ef3"
+                        initialPosition={0.08}
+                        showSpinner={false}
+                        shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+                    />
+                    <GoogleAnalytics />
+                    <Component {...pageProps} />
+                </ThemeProvider>
+            </ColorModeContext.Provider>
+        </ApolloProvider>
 	)
 }
 
