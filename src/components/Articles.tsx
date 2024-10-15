@@ -47,7 +47,11 @@ const Articles = () => {
 
     return (
         <Stack direction='column' spacing={4} mt={4}>
-            <Typography variant='h6'>
+            <Typography
+                variant='h6'
+                fontWeight={600}
+                gutterBottom
+            >
                 {t('articles')}
             </Typography>
             <Stack direction={{ sm: 'column', md: 'row' }} spacing={4}>
