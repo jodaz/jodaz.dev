@@ -3,7 +3,7 @@ import { auto } from '@cloudinary/url-gen/actions/resize';
 import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
 
 export const cloudinaryImageUrl = (imagePublicId: string) => {
-    const cld = new Cloudinary({ cloud: { cloudName: 'jodaz' } });
+    const cld = new Cloudinary({ cloud: { cloudName: process.env.CLOUDINARY_NAME } });
 
     const img = cld
         .image(imagePublicId)
