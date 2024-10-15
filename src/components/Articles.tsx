@@ -67,7 +67,7 @@ const Articles = () => {
                         <JumpAnimation>
                             <Paper elevation={1} sx={{
                                 borderRadius: 3,
-                                height: '360px',
+                                height: 'fit-content',
                                 display: 'flex',
                                 flexDirection: 'column',
                                 mb: 4
@@ -76,12 +76,14 @@ const Articles = () => {
                                     src={post.node.coverImage.url}
                                     alt='cover_image'
                                     width={100}
-                                    height={100}
+                                    height={200}
                                     style={{
                                         width: '100%',
                                         height: '200px',
                                         borderRadius: '12px'
                                     }}
+                                    layout='responsive'
+                                    blurDataURL={post.node.coverImage.url}
                                 />
                                 <Stack px={3} py={3} justifyContent='space-between' flex={1}>
                                     <Typography
