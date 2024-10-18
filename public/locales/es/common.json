@@ -5,6 +5,7 @@
     "About": "Sobre mí",
     "Projects": "Proyectos",
 	"position": "Desarrollador",
+    "cv": "Ver resumen",
 	"bio": "con más de 4 años de experiencia como desarrollador web trabajando con ReactJS, NodeJS y Laravel. Experiencia en equipos ágiles, depuración y optimización de aplicaciones web.",
     "footer": {
         "intro": "Este sitio es de ",

@@ -12,6 +12,7 @@ import { INTERNAL_LINKS } from '@/constants/internal-links';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { useDetectOutsideClick } from '@/hooks/useDetectOutsideClick';
+import { DownloadResume } from './DownloadResume';
 import NavLink from './NavLink';
 import ToggleLanguageButton from "./ToggleLanguageButton";
 import ToggleThemeButton from "./ToggleThemeButton";
@@ -46,35 +47,44 @@ const Logo = () => (
     </NextLink>
 )
 
-const DesktopMenu = ({ i18n } : { i18n: any }) => {
+const DesktopMenu = ({ t } : { t: any }) => {
     const router = useRouter();
 
     const isHomePage = router.pathname === '/';
 
     const renderLinks = () => INTERNAL_LINKS.map((link, i) => (
-        <NavLink route={link.route} key={i} name={i18n(link.page)} />
+        <NavLink route={link.route} key={i} name={t(link.page)} />
     ))
 
     return (
         <Stack
-            spacing={2}
+            spacing={3}
             direction='row'
             sx={{
                 flex: 1,
                 alignItems: 'center',
                 justifyContent: 'end',
                 height: '100%',
-                pr: 4
+                pr: 4,
             }}
         >
-            {!isHomePage ? renderLinks() : null}
-            <ToggleLanguageButton />
+            <Stack direction='row' sx={{
+                flex: 1,
+                justifyContent: 'start',
+                paddingLeft: '75px',
+                height: '100%',
+                alignItems: 'center'
+            }}>
+                {!isHomePage ? renderLinks() : null}
+            </Stack>
+            <DownloadResume />
             <ToggleThemeButton />
+            <ToggleLanguageButton />
         </Stack>
     )
 }
 
-const MobileMenu = ({ i18n } : { i18n : any}) => {
+const MobileMenu = ({ t } : { t : any}) => {
     const ref = React.useRef<any>(null);
     const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
@@ -125,9 +135,10 @@ const MobileMenu = ({ i18n } : { i18n : any}) => {
                         spacing={1}
                         direction='column'
                         flex={1}
+                        paddingX={1}
                         sx={{
                             width: '100%',
-                            background: theme => theme.palette.background.default
+                            background: theme => theme.palette.background.default,
                         }}
                     >
                         <Stack
@@ -136,7 +147,6 @@ const MobileMenu = ({ i18n } : { i18n : any}) => {
                             alignItems='center'
                             pt={2}
                             pb={2}
-                            pr={2}
                         >
                             <Logo />
                             <IconButton onClick={toggleMenu}>
@@ -147,9 +157,12 @@ const MobileMenu = ({ i18n } : { i18n : any}) => {
                             <NavLink
                                 route={link.route}
                                 key={i}
-                                name={i18n(link.page)}
+                                name={t(link.page)}
                             />
                         ))}
+                        <Stack paddingX={2}>
+                            <DownloadResume />
+                        </Stack>
                     </Stack>
                     <Stack
                         direction='column'
@@ -192,12 +205,15 @@ export function Header() {
                 background: theme => theme.palette.background.default,
                 width: '100%'
             }}>
-                <Box display='flex' justifyContent='space-between' alignSelf='center' sx={{
-                    width: { xs: '100%', md: '50%' }
-                }}>
+                <Box
+                    display='flex'
+                    justifyContent='space-between'
+                    alignSelf='center'
+                    flex={isSmall ? 1 : 'unset'}
+                >
                     <Logo />
                 </Box>
-                {isSmall ? <MobileMenu i18n={t} /> : <DesktopMenu i18n={t} />}
+                {isSmall ? <MobileMenu t={t} /> : <DesktopMenu t={t} />}
             </Box>
         </>
     )

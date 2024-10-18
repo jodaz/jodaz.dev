@@ -13,3 +13,8 @@ export const USERNAMES = {
     linkedin: 'Jesus Ordosgoitty',
     instagram: '@jodaz_'
 }
+
+export const resume = {
+    spanish: 'https://mega.nz/file/j9AUwSCA#3omYfghpnNENKhz6umcV4AFlJarErvsv8TbzwD0pU1A',
+    english: 'https://mega.nz/file/2gAhVbAa#fftVow6G2a5xoZuu6lsIy_nOvD_cbvpVE_On1EPG-cM'
+}
