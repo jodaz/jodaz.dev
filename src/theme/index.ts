@@ -14,7 +14,7 @@ const theme = (mode: PaletteMode, deviceType: string) => createTheme({
     typography: {
         fontFamily: 'Poppins, sans-serif',
 		h6: {
-			fontSize: '1.5rem'
+			fontSize: '1.5rem',
 		},
 		subtitle1: {
 			fontSize: '1.1rem'

@@ -40,7 +40,7 @@ const Logo = () => (
                 fontSize='1rem'
                 color='info.light'
             >
-                Jesus Ordosgoitty
+                jodaz.dev
             </Typography>
         </Stack>
     </NextLink>
