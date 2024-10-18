@@ -40,7 +40,8 @@ export {
     BiLogoPhp as PHP,
     BiLink as LinkIcon,
     BiLogoNodejs as NodeJS,
-    BiLogoRedux as Redux
+    BiLogoRedux as Redux,
+    BiBookReader as BookReader
 } from 'react-icons/bi'
 
 export {

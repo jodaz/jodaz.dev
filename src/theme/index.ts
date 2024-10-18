@@ -2,12 +2,19 @@ import "@fontsource/poppins"
 import { createTheme, alpha } from '@mui/material/styles';
 import { PaletteMode } from '@mui/material';
 import { scrollbarStyles } from "./scrollbar";
+import { match } from "css-mediaquery";
 
-const theme = (mode: PaletteMode) => createTheme({
+const ssrMatchMedia = (deviceType: string) => (query: string) => ({
+    matches: match(query, {
+        width: deviceType === 'mobile' ? '0px' : '1024px',
+    })
+})
+
+const theme = (mode: PaletteMode, deviceType: string) => createTheme({
     typography: {
         fontFamily: 'Poppins, sans-serif',
 		h6: {
-			fontSize: '1.5rem'
+			fontSize: '1.5rem',
 		},
 		subtitle1: {
 			fontSize: '1.1rem'
@@ -38,6 +45,11 @@ const theme = (mode: PaletteMode) => createTheme({
 		}
 	},
     components: {
+        MuiUseMediaQuery: {
+            defaultProps: {
+                ssrMatchMedia: ssrMatchMedia(deviceType),
+            },
+        },
         MuiButton: {
             styleOverrides: {
                 root: {

@@ -5,7 +5,10 @@ const nextConfig = {
 	i18n,
   	reactStrictMode: true,
     images: {
-        domains: ['res.cloudinary.com'], // Add your Cloudinary domain here
+        domains: [
+            'res.cloudinary.com',
+            'cdn.hashnode.com'
+        ],
     },
 }
 

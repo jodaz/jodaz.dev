@@ -1,5 +1,12 @@
 import * as React from 'react'
-import { Box, IconButton, Stack, Typography, useMediaQuery } from "@mui/material";
+import {
+    Box,
+    IconButton,
+    Stack,
+    Theme,
+    Typography,
+    useMediaQuery
+} from "@mui/material";
 import { Close, Menu } from "@/constants/icons";
 import { INTERNAL_LINKS } from '@/constants/internal-links';
 import { useRouter } from 'next/router';
@@ -33,7 +40,7 @@ const Logo = () => (
                 fontSize='1rem'
                 color='info.light'
             >
-                Jesus Ordosgoitty
+                jodaz.dev
             </Typography>
         </Stack>
     </NextLink>
@@ -168,7 +175,9 @@ const MobileMenu = ({ i18n } : { i18n : any}) => {
 }
 
 export function Header() {
-    const isSmall = useMediaQuery('(max-width:600px)')
+    const isSmall = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'), {
+        noSsr: true
+    })
     const { t } = useTranslation()
 
     return (

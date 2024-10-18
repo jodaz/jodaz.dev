@@ -19,7 +19,7 @@ const Projects = () => {
         <>
             <NextSeo
                 {...seo}
-                title={`${t('page_title')} - Jesus Ordosgoitty`}
+                title={`${t('page_title')}`}
                 openGraph={{
                     url: `${defaultUrl}${t('page_url')}`,
                     title: t('page_title'),
