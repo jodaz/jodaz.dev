@@ -1,12 +1,25 @@
-import { Button, styled } from '@mui/material';
+import { Link, styled } from '@mui/material';
+import { useTranslation } from 'react-i18next';
+import { resume } from '@/constants/social-links';
+import { ResumeIcon } from '@/constants/icons';
 
-export const DownloadResume = styled(Button)(({ theme }) => ({
+const DownloadResumeButton = styled(Link)(({ theme }) => ({
     position: 'relative',
     overflow: 'hidden',
     color: '#fff',
-    backgroundColor: '#6200ea',
+    backgroundColor: theme.palette.info.light,
     transition: 'background-color 0.3s ease',
     borderRadius: theme.spacing(2),
+    padding: '12px 14px',
+    textDecoration: 'none',
+    fontWeight: 600,
+    display: 'flex',
+    alignItems: 'center',
+    cursor: 'pointer',
+    width: 'fit-content',
+    '&:hover': {
+      color: '#fff',
+    },
     '&:before': {
       content: '""',
       position: 'absolute',
@@ -17,7 +30,7 @@ export const DownloadResume = styled(Button)(({ theme }) => ({
       background: 'linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 100%)',
       transform: 'translateY(-50%)',
       transition: 'left 0.5s ease',
-      opacity: 0, // Initially hidden
+      opacity: 0,
     },
     '&:hover:before': {
       left: '100%',
@@ -34,3 +47,17 @@ export const DownloadResume = styled(Button)(({ theme }) => ({
     },
 }));
 
+export function DownloadResume() {
+    const { t, i18n } = useTranslation()
+
+    return (
+        <DownloadResumeButton
+            href={i18n.language == 'es' ? resume.spanish : resume.english}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <ResumeIcon style={{ marginRight: '12px' }} />
+            {t('cv')}
+        </DownloadResumeButton>
+    )
+}

@@ -10,7 +10,8 @@ export {
     SiDigitalocean as DigitalOcean,
     SiVite as Vite,
     SiNginx as Nginx,
-    SiJquery as jQuery
+    SiJquery as jQuery,
+    SiReaddotcv as ResumeIcon
 } from 'react-icons/si'
 
 export {
