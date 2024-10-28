@@ -13,7 +13,7 @@
             "href": "https://horsy.ai",
             "picture": "/images/projects/horsy.png",
             "hidden": false,
-            "skills": ["React", "Next.js", "MUI", "Docker", "React Hook Form"]
+            "skills": ["React", "Next.js", "Docker", "FastAPI", "Python", "React Hook Form", "MUI"]
         },
         {
             "name": "VanguardDevs",

@@ -11,7 +11,8 @@ export {
     SiVite as Vite,
     SiNginx as Nginx,
     SiJquery as jQuery,
-    SiReaddotcv as ResumeIcon
+    SiReaddotcv as ResumeIcon,
+    SiFastapi as FastAPI
 } from 'react-icons/si'
 
 export {
@@ -42,7 +43,9 @@ export {
     BiLink as LinkIcon,
     BiLogoNodejs as NodeJS,
     BiLogoRedux as Redux,
-    BiBookReader as BookReader
+    BiBookReader as BookReader,
+    BiLogoFlask as Flask,
+    BiLogoPython as Python
 } from 'react-icons/bi'
 
 export {
