@@ -16,7 +16,9 @@ import {
     PHP,
     Nginx,
     Laravel,
-    jQuery
+    jQuery,
+    FastAPI,
+    Python
 } from '@/constants/icons';
 
 type SkillIcon = React.FC<{ size?: string }>; // Adjust props as needed
@@ -37,7 +39,9 @@ const skillIcons: Record<string, SkillIcon> = {
     PHP: PHP,
     Nginx: Nginx,
     Laravel: Laravel,
-    jQuery: jQuery
+    jQuery: jQuery,
+    FastAPI: FastAPI,
+    Python: Python
 };
 
 export const getSkillIcon = (skill: string) => {
