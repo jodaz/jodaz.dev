@@ -10,7 +10,7 @@ import {
 import { Close, Menu } from "@/constants/icons";
 import { INTERNAL_LINKS } from '@/constants/internal-links';
 import { useRouter } from 'next/router';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { useDetectOutsideClick } from '@/hooks/useDetectOutsideClick';
 import { DownloadResume } from './DownloadResume';
 import NavLink from './NavLink';

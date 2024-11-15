@@ -6,7 +6,7 @@ import {
 } from '@mui/material';
 import { IPost } from '@/types/models';
 import { JumpAnimation } from '@/utils/animations';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import PostCard from './PostCard';
 
 const GET_ARTICLES = gql`

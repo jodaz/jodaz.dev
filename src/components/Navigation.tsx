@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Stack } from "@mui/material";
 import { INTERNAL_LINKS } from '@/constants/internal-links';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import NavLink from './NavLink';
 
 const Navigation = () => {

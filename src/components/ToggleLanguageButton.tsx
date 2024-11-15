@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ToggleButton, ToggleButtonGroup, alpha } from '@mui/material';
 import { useRouter } from 'next/router';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import styled from '@emotion/styled';
 
 const Button = styled(ToggleButton)(({ theme }) => ({

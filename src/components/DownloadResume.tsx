@@ -1,5 +1,5 @@
 import { Link, styled } from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { resume } from '@/constants/social-links';
 import { ResumeIcon } from '@/constants/icons';
 
