@@ -19,16 +19,9 @@ const ComingSoon = () => (
 				— Thank you for your patience and curiosity —
 			</Typography>
 			<Box mt={2}>
-				<Link href='https://instagram.com/jodaz_' passHref>
-					<Typography
-						component='a'
-						color='#C13584'
-						fontWeight={500}
-						style={{ textDecoration: 'none' }}
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						{'@jodaz_'}
+				<Link href='https://x.com/jodaz_' color='info' target='_blank' passHref>
+					<Typography component='a' color='info.main' fontWeight={500}>
+						{'jodaz_'}
 					</Typography>
 				</Link>
 			</Box>
