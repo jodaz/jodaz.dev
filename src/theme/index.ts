@@ -12,7 +12,7 @@ const ssrMatchMedia = (deviceType: string) => (query: string) => ({
 
 const theme = (mode: PaletteMode, deviceType: string) => createTheme({
     typography: {
-        fontFamily: 'Poppins, sans-serif',
+        fontFamily: 'Edo, Poppins, sans-serif',
 		h6: {
 			fontSize: '1.5rem',
 		},
