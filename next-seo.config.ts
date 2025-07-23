@@ -1,18 +1,18 @@
 /* @ref: https://github.com/garmeeh/next-seo */
 
-const title = 'Jodaz Developments'
+const title = 'Jodaz Studio'
 const defaultTitle = `${title} - Crafting Solutions`
 // const description =
 // "Hi fellow Layer 8 mate!, I am Jesus Ordosgoitty, a 98' born guy full-stack software developer mainly using Node, React and Python."
 const description =
-	'Jodaz Developments provides professional software development services, focusing on scalable, high-quality web and mobile solutions for startups and enterprises. Our expertise covers frontend, backend, and cloud technologies.'
+	'Jodaz Studio provides professional software development services, focusing on scalable, high-quality web and mobile solutions for startups and enterprises. Our expertise covers frontend, backend, and cloud technologies.'
 const url = 'https://jodaz.dev'
 const ogImageUrl = '/images/og.png'
 const keywords =
 	'ordosgoitty, jodaz, developments, jesus ordosgoitty, portfolio, javascript, typescript, developer, software engineer, frontend, front-end, venezuela, caribe, fullstack, full-stack, full stack, mobile, react, react native, native'
 
 const seo = {
-	titleTemplate: `%s – Jodaz Developments`,
+	titleTemplate: `%s – Jodaz Studio`,
 	defaultTitle,
 	description,
 	openGraph: {

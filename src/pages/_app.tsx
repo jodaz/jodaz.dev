@@ -11,8 +11,8 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import NextTopLoader from 'nextjs-toploader'
 import { ApolloProvider } from '@apollo/client'
 import { apolloClient } from '@/utils/apollo-client'
-import parser from 'ua-parser-js'
-import Home from '@/pages/index'
+// import parser from 'ua-parser-js'
+import ComingSoon from '@/views/ComingSoon'
 
 interface IAppProps extends AppProps {
 	deviceType: string
@@ -47,9 +47,7 @@ function App({ Component, pageProps, deviceType }: IAppProps) {
 						shadow='0 0 10px #2299DD,0 0 5px #2299DD'
 					/>
 					<GoogleAnalytics />
-					<Home />
-					{/* <ComingSoon /> */}
-					{/* <Component {...pageProps} /> */}
+					<Component {...pageProps} />
 				</ThemeProvider>
 			</ColorModeContext.Provider>
 		</ApolloProvider>
@@ -59,9 +57,9 @@ function App({ Component, pageProps, deviceType }: IAppProps) {
 App.getInitialProps = async (context: any) => {
 	let deviceType
 
-	if (context.ctx.req) {
-		deviceType = parser(context.ctx.req.headers['user-agent']).device.type || 'desktop'
-	}
+	// if (context.ctx.req) {
+	// 	deviceType = parser(context.ctx.req.headers['user-agent']).device.type || 'desktop'
+	// }
 
 	return {
 		...NextApp.getInitialProps(context),
